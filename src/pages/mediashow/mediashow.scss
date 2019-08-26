@@ -1,0 +1,154 @@
+.mediaBox {
+    padding: 60px 0 20px 0;
+    position: relative;
+
+    .mediaAllNewsBox {
+        min-height: 367px;
+        width: 100%;
+        margin-bottom: 60px;
+        // background-color: palegoldenrod;
+        text-align: right;
+
+        .mediaAllNewsList {
+            min-height: 367px;
+            width: 20.83%;
+            display: inline-block;
+            background: #1C3672;
+            border-radius: 6px;
+            padding: 1px 1px 0px 1px;
+            position: absolute;
+            text-align: center;
+            left: 0px;
+
+            .mediaAllNewsTitle {
+                font-size: 24px;
+                color: #FFFFFF;
+                height: 33px;
+                line-height: 33px;
+                margin: 131px auto 0
+            }
+
+            .mediaAllNewsGarid {
+                width: 90px;
+                border: 2px solid #FFFFFF;
+                margin: 20px auto
+            }
+
+            .mediaAllNewsTitleS {
+                font-size: 20px;
+                margin: 20px auto;
+                color: #FFFFFF;
+            }
+        }
+
+        .mediaAllNewsRight {
+            min-height: 367px;
+            width: 79.20%;
+            display: inline-block;
+
+            // margin-left: 10px;
+            position: relative;
+
+            .mediaAllNewsList {
+                width: 91.58%;
+                height: 367px;
+                display: inline-block;
+                // background: cadetblue;
+                background-color: #f9f9f9;
+
+                .itemShows {
+                    // border: 1px solid palegreen
+                }
+
+                .mediaAllNewsListItem {
+                    width: 97%;
+                    height: 367px;
+                    background: #FFFFFF;
+                    border-radius: 6px;
+                    margin-left: 7%;
+                    cursor: pointer;
+
+                    .fastPayImg1 {
+                        height: 140px;
+                        width: 100%;
+                        margin: 0px
+                    }
+
+                    .fastPayTitle {
+                        font-size: 16px;
+                        color: #333333;
+                        width: 97%;
+                        line-height: 22px;
+                        margin: 20px auto 0;
+                        text-align: left
+                    }
+
+                    .fastPayContent {
+                        display: inline-block;
+                        // background-color: palegoldenrod;
+                        font-size: 14px;
+                        color: #666666;
+                        width: 97%;
+                        height: 60px;
+                        line-height: 20px;
+                        margin: 20px auto 0;
+                        text-align: left;
+
+                        display: -webkit-box;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                    }
+
+                    .fastPayTime {
+                        font-size: 12px;
+                        color: #999999;
+                        width: 224px;
+                        line-height: 22px;
+                        margin: 10px auto 0;
+                        text-align: left
+                    }
+
+                    .ft1 {
+                        margin: 0px auto;
+                    }
+                }
+
+                // .media1 {
+                //     margin-left: 5%
+                // }
+
+                // .media2 {
+                //     margin-left: 2%
+                // }
+            }
+
+            .moreNews {
+                height: 367px;
+                width: 60px;
+                display: inline-block;
+                background-color: #fff;
+                position: absolute;
+                top: 0px;
+                right: -80px;
+                font-size: 20px;
+                color: #1C3672;
+                padding: 107px 20px 20px 20px;
+                text-align: center;
+                cursor: pointer;
+
+                .moreImg {
+                    margin-top: 10px
+                }
+            }
+        }
+    }
+}
+
+.banner2s {
+    width: 100%;
+
+    .banner2sImg {
+        width: 100%;
+    }
+}

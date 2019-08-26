@@ -1,0 +1,57 @@
+.mediaBigBox {
+    min-height: 120px;
+    background-color: #fff;
+    margin: 40px auto 106px;
+    padding-bottom: 43px;
+
+    .mediaNva {
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+
+        margin: 30px auto;
+        // display: inline-block;
+        position: relative;
+
+        .mediaNvaList {
+
+            color: #999999;
+
+        }
+
+        .mediaNvaRight {
+            position: absolute;
+            right: 10px;
+            top: 0px;
+            cursor: pointer;
+
+            span {
+                margin-left: 10px;
+                color: #1C3672;
+            }
+        }
+    }
+
+    .mediaNvaContentTitle {
+        font-size: 36px;
+        color: #333333;
+        margin: 40px auto;
+    }
+
+    .mediaNvaContentDetails {
+        font-size: 14px;
+        color: #666666;
+        line-height: 20px;
+        margin: 30px auto;
+    }
+
+    .newImg {
+        width: 100%;
+    }
+
+}
+
+.mediaNvaGaird {
+    width: 100%;
+    border: 1px solid #F0F0F0;
+}

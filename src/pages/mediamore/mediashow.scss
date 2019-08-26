@@ -1,0 +1,67 @@
+.newDetailBigBox {
+    margin-top: 10px;
+
+    .breadCrumbs {
+        font-size: 12px;
+        color: #999999;
+        height: 17px;
+        line-height: 17px;
+        background-color: #f9f9f9;
+        padding: 8px 0;
+    }
+
+    .newDetailBox {
+        background: #FFFFFF;
+        border-radius: 6px;
+        margin: 20px auto;
+        padding: 1px;
+
+        .itemBox {
+            margin: 40px 26px 41px 40px;
+            cursor: pointer;
+
+            .newDetailBoxTitle {
+                font-size: 20px;
+                color: #333333;
+                height: 25px;
+                line-height: 25px
+            }
+
+            .newDetailBoxTime {
+                font-size: 12px;
+                color: #999999;
+                height: 25px;
+                line-height: 25px;
+                margin-top: 10px
+            }
+
+            .newDetailGarid {
+                border: 2px solid #1C3672;
+                width: 80px;
+                margin-top: 10px
+            }
+
+            .newDetailContent {
+                font-size: 14px;
+                color: #666666;
+                line-height: 20px;
+                margin-top: 10px;
+                line-height: 20px
+            }
+
+            .newDetailGarid1 {
+                border: 1px solid #F0F0F0;
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    #PageBox {
+        text-align: center
+    }
+}
+
+.newDetailGarid1Last {
+    display: none
+}

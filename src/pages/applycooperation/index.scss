@@ -1,0 +1,116 @@
+.banner2s {
+    // height: 130%;
+    width: 100%;
+    background: url(../../images/bg1.png) no-repeat;
+    position: relative;
+    // top: -75px;
+    background-size: 100% 100%;
+    padding: 75px 0 75px 0;
+    z-index: -1;
+    text-align: center;
+
+    .banner2sTitle {
+        font-size: 36px;
+        color: #FFFFFF;
+        margin: 122px auto 30px
+    }
+
+    .banner2sGarid {
+        border: 2px solid #FFFFFF;
+        width: 117px;
+        margin: 0px auto
+    }
+
+    .banner2sTitle1 {
+        font-size: 24px;
+        color: #FFFFFF;
+        margin: 40px auto
+    }
+}
+
+.msgBigBoxA {
+    text-align: center;
+    // background-color: palegoldenrod;
+    margin: 100px auto 0;
+
+    .msgBigBox {
+        width: 524px;
+        height: 497px;
+        margin: 10px auto;
+        background: #FFFFFF;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
+        border-radius: 6px;
+        position: relative;
+        text-align: center;
+        top: -193px;
+        padding: 40px 10px 0px 60px
+    }
+
+    .msgItem {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #666666;
+        // background-color: palegoldenrod;
+        text-align: left;
+        margin-top: 20px;
+
+        .msgItemTitle {
+            margin-left: 14px
+        }
+
+        .t1 {
+            margin-left: 17px
+        }
+
+        .t2 {
+            margin-left: 7px
+        }
+
+        .msgItemIpt {
+            width: 320px;
+            height: 30px;
+            display: inline-block
+        }
+
+
+    }
+
+    .msgItemShows {
+        text-align: left;
+        font-size: 12px;
+        color: #1C3672;
+        margin: 10px 0 0 84px
+    }
+
+    .submit {
+        width: 390px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-image: linear-gradient(-180deg, #D1DDF6 0%, #EBF1FC 100%);
+        border-radius: 6px;
+        margin: 30px 0px 0 14px;
+        font-size: 18px;
+        color: #1C3672;
+        cursor: pointer;
+    }
+}
+
+.form-group {
+    display: inline-block;
+
+
+}
+
+#myModalLabel {
+    text-align: center;
+    font-size: 20px;
+    color: #1C3672;
+}
+
+.modal-body {
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+}

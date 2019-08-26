@@ -1,0 +1,47 @@
+<footer class="footBox">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4">
+                <img class="footLogo" src="./assets/img/logofoot.png" alt="">
+                <div class="footTel">服务热线：028-86155671</div>
+                <div class="footTel">商务合作：028-86155671</div>
+                <div class="footTel">邮箱地址：ifepay@163.com</div>
+                <div class="footTel">公司地址：成都市天府大道交子金融科技中心</div>
+            </div>
+            <div class="col-xs-4 col-sm-4 ">
+                <div class="footWen_lift">
+                    <a href="javascript:;">   
+                        <div class="footWen">开发文档</div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="footTel">技术文档</div>
+                    </a>
+                </div>
+                <div class="footWen_right">
+                    <a href="./applycooperation.html">
+                        <div class="footAbout">关于我们</div>
+                    </a>
+                    <a href="./applycooperation.html">
+                        <div class="footAbouts ">商务合作</div>
+                    </a>
+                    <a href="./applycooperation.html">
+                        <div class="footAbouts">联系我们</div>
+                    </a>
+                    <a href="//www.ifepay.com/admin" target="_blank">
+                        <div class="login hidden-xs">企业登录</div>
+                    </a>
+                </div>
+
+            </div>
+            <!-- Optional: clear the XS cols if their content doesn't match in height -->
+           <!--  <div class="clearfix visible-xs-block"></div> -->
+            <div class="col-xs-4 col-sm-4 QrcodeS">
+                <div class="footWinxinTitle">官方微信</div>
+                <img class="qrcodeImg" src="./assets/img/logoFOOT.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footButton">
+        Copyright © 2019 成都网易联科技有限公司 All Rights Reserved -蜀ICP备18037181号
+    </div>
+</footer>

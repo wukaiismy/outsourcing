@@ -1,0 +1,346 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+/* structural elements 结构元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+/* list elements 列表元素 */
+pre,
+/* text formatting elements 文本格式元素 */
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+/* form elements 表单元素 */
+th,
+td
+
+/* table elements 表格元素 */
+  {
+  margin: 0;
+  padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button,
+input,
+select,
+textarea
+
+/* for ie */
+  {
+  font-family: PingFangSC-Regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+
+/* 将斜体扶正 */
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new, courier, monospace;
+}
+
+/* 统一等宽字体 */
+small {
+  font-size: 12px;
+}
+
+body {
+  background-color: #f9f9f9;
+  min-width: 1080px;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/** 重置列表元素 **/
+ul,
+ol {
+  list-style: none;
+}
+
+/** 重置文本格式元素 **/
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+/* 重置，减少对行高的影响 */
+sub {
+  vertical-align: text-bottom;
+}
+
+/** 重置表单元素 **/
+legend {
+  color: #000;
+}
+
+/* for ie6 */
+fieldset,
+img {
+  border: 0;
+}
+
+/* img 搭车：让链接里的 img 无边框 */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+
+/** 重置表格元素 **/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 居中 */
+#header,
+#footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 浮动 */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 隐藏 */
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+  content: "\20";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* inline block */
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+a:hover {
+  color: #409f73;
+  text-decoration: none;
+}
+
+// 头部样式
+.hearder {
+  background: #ffffff;
+  box-shadow: 0px 0 4px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 120px;
+  line-height: 120px;
+  border-top: 2px solid #1c3672;
+}
+
+.logoTop {
+  height: 60px;
+}
+
+.nav,
+ul,
+li {
+  display: inline-block;
+  height: 120px;
+}
+
+.nav {
+  float: right;
+  padding-right: 20px;
+
+  ul,
+  li,
+  ol {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333333;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+}
+
+ul .navItem {
+  margin-left: 48px;
+}
+
+.selected {
+  border-bottom: 4px solid #1c3672;
+
+  a {
+    color: #1c3672;
+  }
+}
+
+.carousel-indicators li {
+  margin: 4px
+}
+
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 3px;
+  background-color: #fff;
+}
+
+// 底部样式
+.footBox {
+  width: 100%;
+  height: 400px;
+  background: #0d1e44;
+
+  .footLogo {
+    margin-top: 80px;
+    height: 68px;
+  }
+
+  .footTel {
+    font-size: 14px;
+    color: #ffffff;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .footWen_lift {
+    display: inline-block;
+    width: 41.176%;
+    height: 50px;
+    padding-top: 168px;
+    margin-left: 50px;
+
+    .footWen {
+      font-size: 14px;
+      color: #ffffff;
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .footWen_right {
+    display: inline-block;
+    width: 58.82%;
+    height: 110px;
+    margin-left: 58.82%;
+
+    // margin-top: 10px;
+    position: relative;
+    top: -50px;
+
+    .footAbout {
+      font-size: 14px;
+      color: #ffffff;
+      height: 20px;
+      line-height: 20px;
+    }
+
+    .footAbouts {
+      font-size: 14px;
+      color: #ffffff;
+      margin-top: 10px;
+    }
+
+    .login {
+      font-size: 14px;
+      color: #ffffff;
+      margin-top: 10px;
+    }
+  }
+
+  .QrcodeS {
+    text-align: center;
+
+    .footWinxinTitle {
+      text-align: center;
+      font-size: 20px;
+      color: #ffffff;
+      height: 30px;
+      line-height: 30px;
+      margin-top: 80px;
+    }
+
+    .qrcodeImg {
+      width: 140px;
+      margin: 30px auto;
+    }
+  }
+
+  .footButton {
+    font-size: 14px;
+    color: #ffffff;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
