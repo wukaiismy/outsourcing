@@ -1,14 +1,15 @@
 <div class="hearder">
     <div class="container">
-        <img class="logoTop" src="./assets/img/logss.png" alt="信条logo">
+       <span class='hearderTitles'>杨华教育</span>
         <div class="nav">
             <ul class="navRight">
                 <li class="navItem  selected n1"><a href="./index.html">首页</a> </li>
-                <li class="navItem n2"><a href="./product.html">产品中心</a></li>
-                <li class="navItem n3"><a href="./business.html">商务合作</a></li>
-                <li class="navItem n4"><a href="./aboutus.html">关于我们</a></li>
-                <li class="navItem n5"><a href="./mediashow.html">媒体资料</a></li>
-                <li class="navItem n6"><a href="./applycooperation.html">申请加盟</a></li>
+                <li class="navItem n2"><a href="./product.html">我要报考</a></li>
+                <li class="navItem n3"><a href="./business.html">服务大厅</a></li>
+                <li class="navItem n4"><a href="./aboutus.html">资料中心</a></li>
+                <li class="navItem n5"><a href="./mediashow.html">学习平台</a></li>
+                <li class="navItem n6"><a href="./applycooperation.html">服务网点</a></li>
+                <li class="navItem n7"><a href="./applycooperation.html">免费加盟</a></li>
             </ul>
         </div>
     </div>

@@ -11,24 +11,24 @@
             <div class="col-xs-4 col-sm-4 ">
                 <div class="footWen_lift">
                     <a href="javascript:;">   
-                        <div class="footWen">开发文档</div>
+                        <div class="footWen">我要报考</div>
                     </a>
                     <a href="javascript:;">
-                        <div class="footTel">技术文档</div>
+                        <div class="footTel">服务大厅</div>
                     </a>
                 </div>
                 <div class="footWen_right">
                     <a href="./applycooperation.html">
-                        <div class="footAbout">关于我们</div>
+                        <div class="footAbout">资料中心</div>
                     </a>
                     <a href="./applycooperation.html">
-                        <div class="footAbouts ">商务合作</div>
+                        <div class="footAbouts ">学习平台</div>
                     </a>
                     <a href="./applycooperation.html">
-                        <div class="footAbouts">联系我们</div>
+                        <div class="footAbouts">服务网点</div>
                     </a>
                     <a href="//www.ifepay.com/admin" target="_blank">
-                        <div class="login hidden-xs">企业登录</div>
+                        <div class="login hidden-xs">免费加盟</div>
                     </a>
                 </div>
 
@@ -42,6 +42,6 @@
         </div>
     </div>
     <div class="footButton">
-        Copyright © 2019 成都网易联科技有限公司 All Rights Reserved -蜀ICP备18037181号
+        Copyright © 2019 扬华教育有限公司 All Rights Reserved -蜀ICP备18037181号
     </div>
 </footer>
