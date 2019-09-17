@@ -84,6 +84,20 @@ $(function() {
   //     console.log("请求数据异常，状态码：" + XMLHttpRequest.status);
   //   }
   // });
+
+  // 鼠标移入事件
+  $(".navTitlesItem").each(function(ind, item) {
+    console.log(ind);
+    console.log(item);
+    console.log(this);
+    $(this).on("mouseover", function() {
+      console.log(ind);
+      $(".navTitlesItem")
+        .removeClass("navTitlesItemHover")
+        .eq(ind)
+        .addClass("navTitlesItemHover");
+    });
+  });
 });
 
 // 封装函数
