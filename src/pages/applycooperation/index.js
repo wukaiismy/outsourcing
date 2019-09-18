@@ -8,7 +8,7 @@ $(function() {
   $("#headerHtml").html(header);
   $("#footHtml").html(footer);
   $(".navItem").removeClass("selected");
-  $(".n6").addClass("selected");
+  $(".n7").addClass("selected");
   $(".submit").click(function() {
     $(".models").attr("id", "");
     if ($("#contact_user").val() && $("#mobile").val()) {

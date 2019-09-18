@@ -44,7 +44,7 @@ function addMapControl() {
 //标注点数组
 var markerArr = [
   {
-    title: "成都网易联科技有限公司",
+    title: "扬华教育成都分公司",
     content: "地址：交子金融科技中心A210 ",
     point: "104.075999|30.583147",
     isOpen: 1,

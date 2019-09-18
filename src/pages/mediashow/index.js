@@ -9,24 +9,24 @@ $(function() {
   $(".n5").addClass("selected");
 
   // 请求新闻数据
-  msgReq(
-    "new_all",
-    "showData4",
-    "#mediaAllNews",
-    "#mediaAllNews  .mediaAllNewsListItem"
-  );
-  msgReq(
-    "new_nndustry",
-    "showData2",
-    "#mediaAllNews1",
-    "#mediaAllNews1  .mediaAllNewsListItem"
-  );
-  msgReq(
-    "new_policy",
-    "showData1",
-    "#mediaAllNews2",
-    "#mediaAllNews2  .mediaAllNewsListItem"
-  );
+  // msgReq(
+  //   "new_all",
+  //   "showData4",
+  //   "#mediaAllNews",
+  //   "#mediaAllNews  .mediaAllNewsListItem"
+  // );
+  // msgReq(
+  //   "new_nndustry",
+  //   "showData2",
+  //   "#mediaAllNews1",
+  //   "#mediaAllNews1  .mediaAllNewsListItem"
+  // );
+  // msgReq(
+  //   "new_policy",
+  //   "showData1",
+  //   "#mediaAllNews2",
+  //   "#mediaAllNews2  .mediaAllNewsListItem"
+  // );
   // 平台新闻
   // msgReq(
   //   "new_plat",
@@ -35,18 +35,18 @@ $(function() {
   //   "#mediaAllNews3  .mediaAllNewsListItem"
   // );
   // new_plat();
-  $("#mediaAllNewsMore").click(function() {
-    location.href = "./mediamore.html?id=new_all";
-  });
-  $("#mediaAllNews1More").click(function() {
-    location.href = "./mediamore.html?id=new_nndustry";
-  });
-  $("#mediaAllNews2More").click(function() {
-    location.href = "./mediamore.html?id=new_policy";
-  });
-  $("#mediaAllNews3More").click(function() {
-    location.href = "./mediamore.html?id=new_plat";
-  });
+  // $("#mediaAllNewsMore").click(function() {
+  //   location.href = "./mediamore.html?id=new_all";
+  // });
+  // $("#mediaAllNews1More").click(function() {
+  //   location.href = "./mediamore.html?id=new_nndustry";
+  // });
+  // $("#mediaAllNews2More").click(function() {
+  //   location.href = "./mediamore.html?id=new_policy";
+  // });
+  // $("#mediaAllNews3More").click(function() {
+  //   location.href = "./mediamore.html?id=new_plat";
+  // });
 });
 
 // 封装函数

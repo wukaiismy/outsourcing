@@ -1,465 +1,67 @@
-.banner2s {
-    width: 100%;
-    // height: 480px;
+.newDetailBigBox {
+    margin-top: 10px;
 
-    .banner2sImg {
-        width: 100%;
-        // height: 480px;
-    }
-}
-
-.aboutUsBigBox {
-    position: relative;
-    min-height: 471px;
-    width: 63.158%;
-
-    .aboutUsBox {
-        min-height: 471px;
-        width: 100%;
-        background: url(../../images/abg0.png) no-repeat 0 0;
-        position: absolute;
-        top: -120px;
-        border-radius: 6px;
-
-    }
-
-    .coreStrengthss {
-        width: 100%;
-    }
-
-    .coreStrengthsttt {
-        font-size: 24px;
-        color: #333333;
-        text-align: center;
-        margin-top: 60px;
-        height: 35px;
-        width: 100%;
-        // background-color: palegoldenrod
-    }
-
-    .garid1 {
-        text-align: center;
-        width: 127px;
-        margin: 20px auto;
-        border: 2px solid #D0DDF5;
-    }
-
-    .pcter {
-        margin-top: 20px;
-        color: #666666;
-
-    }
-
-    .aboutUsContents {
-        font-size: 14px;
-        color: #333333;
-        width: 97%;
-        // min-width: 60px;
-        line-height: 20px;
-        margin: 40px auto;
-        text-align: left
-    }
-
-    .aboutUsT {
-        font-size: 24px;
-        color: #333333;
-        margin: 40px auto 20px;
-        text-align: center;
-
-    }
-
-    .aboutUsT1 {
-        font-size: 18px;
-        color: #1C3672;
-        text-align: center;
-
-    }
-}
-
-.developmentCourse {
-    margin-top: -135px;
-
-
-    .coreStrengths {
-        font-size: 24px;
-        color: #333333;
-        text-align: center;
-        margin-top: 60px;
-        height: 35px;
-
-    }
-
-    .garid1 {
-        text-align: center;
-        width: 127px;
-        margin: 20px auto;
-        border: 2px solid #D0DDF5;
-    }
-
-    .pcter {
-        margin-top: 20px;
-        color: #666666;
-
-    }
-
-    .developmentCourseTitlwe {
-        width: 100%;
-        min-height: 60px;
-        border: 1px solid #DCDCDC;
-        font-size: 14px;
-        color: #666666;
-        text-align: center;
-        line-height: 60px;
-        margin-top: 40px
-    }
-}
-
-.developmentCourseBigBox {
-    position: relative;
-    font-size: 14px;
-    color: #666666;
-    // width: 100%;
-    height: 553px;
-    margin-top: 60px;
-    // background-color: palegoldenrod;
-
-    span {
+    .breadCrumbs {
+        font-size: 12px;
         color: #999999;
+        height: 17px;
+        line-height: 17px;
+        background-color: #f9f9f9;
+        padding: 8px 0;
     }
 
-    .developmentCourseImg {
-        position: absolute;
-        left: 38.9%
-    }
-
-    .developmentCourseIrem {
-        position: absolute;
-        top: 65px;
-        left: 52%;
-
-        .ssows {
-            width: 406px;
-            min-height: 20px;
-            line-height: 20px;
-            display: inline-block
-        }
-
-        .ssowsLadt {
-            position: absolute;
-            top: 0px;
-            left: 45px;
-        }
-    }
-
-    .Irem1 {
-        top: 105px;
-    }
-
-    .Irem2 {
-        top: 145px;
-    }
-
-    .Irem3 {
-        top: 473px;
-    }
-
-    .IremList {
-        position: absolute;
-        top: 265px;
-        right: 53%;
-        font-size: 14px;
-        color: #666666;
-
-
-        .ssows {
-            width: 430px;
-            min-height: 20px;
-            line-height: 20px;
-            display: inline-block;
-            text-align: right;
-            // background-color: #fff;
-        }
-
-        .ssowsLadt {
-            position: absolute;
-            top: 0px;
-            left: 45px;
-        }
-    }
-
-    .List1 {
-        top: 305px;
-    }
-
-    .List2 {
-        top: 345px;
-    }
-}
-
-.TeamIntroduction {
-
-    // margin-top: 60px;
-
-    .coreStrengths {
-        font-size: 24px;
-        color: #333333;
-        text-align: center;
-        margin-top: 60px;
-        height: 35px;
-
-    }
-
-    .garid1 {
-        text-align: center;
-        width: 127px;
-        margin: 20px auto;
-        border: 2px solid #D0DDF5;
-    }
-
-    .pcter {
-        margin-top: 20px;
-        color: #666666;
-
-    }
-}
-
-.TeamIntroductionBox {
-    position: relative;
-    // text-align: center;
-
-    .TeamIntroductionBoss {
-        background: #EDF4FF;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
+    .newDetailBox {
+        background: #FFFFFF;
         border-radius: 6px;
-        width: 48.33%;
-        height: 316px;
-        padding-bottom: 16px;
-        margin: 5% auto;
-        position: relative;
-        display: inline-block;
+        margin: 20px auto;
+        padding: 1px;
 
-        .bossImg {
-            width: 20%;
-            // height: 120px;
+        .itemBox {
+            margin: 40px 26px 41px 40px;
+            cursor: pointer;
 
-            position: absolute;
-            top: 50px;
-            left: 10%;
-
-        }
-
-        .bossRights {
-
-            width: 70%;
-            height: 100%;
-            position: relative;
-            top: 0;
-            left: 30%;
-            padding: 16px
-        }
-
-        .bossName {
-            font-size: 24px;
-            color: #1C3672;
-            margin: 37px 0 0 0px;
-            // position: absolute;
-            // top: 50px;
-            // left: 37.667%;
-
-            span {
-                color: #333333;
-            }
-        }
-
-        .bossGarid {
-            border: 2px solid #1C3672;
-            width: 40px;
-            // position: absolute;
-            top: 106px;
-            left: 37.667%;
-            margin: 20px 0 0 0px;
-
-        }
-
-        .bossContent {
-            font-size: 14px;
-            color: #666666;
-            width: 100%;
-            min-height: 40px;
-            line-height: 20px;
-            text-align: left;
-            margin: 20px auto 0;
-
-        }
-    }
-
-    .tt1 {
-        margin-right: 2.8%
-    }
-
-    .TeamIntroductionItem {
-        position: relative;
-        min-height: 420px;
-
-        .fastPayItem {
-            width: 100%;
-            min-height: 420px;
-            background: #FFFFFF;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
-            border-radius: 6px;
-            position: relative;
-            text-align: center;
-
-            .fastPayImg1 {
-                width: 37.04%;
-                border-radius: 100%;
-                margin-top: 50px;
-            }
-
-            .fastPayTitle {
+            .newDetailBoxTitle {
                 font-size: 20px;
-                color: #1C3672;
-                margin-top: 30px;
-
-                span {
-                    color: #151515;
-                }
+                color: #333333;
+                height: 25px;
+                line-height: 25px
             }
 
-            .garid12 {
-                border: 2px solid #D0DDF5;
-                width: 50px;
-                margin: 20px auto
+            .newDetailBoxTime {
+                font-size: 12px;
+                color: #999999;
+                height: 25px;
+                line-height: 25px;
+                margin-top: 10px
             }
 
-            .fastPayContent {
+            .newDetailGarid {
+                border: 2px solid #1C3672;
+                width: 80px;
+                margin-top: 10px
+            }
+
+            .newDetailContent {
                 font-size: 14px;
                 color: #666666;
-                width: 95%;
-                min-height: 120px;
                 line-height: 20px;
-                text-align: left;
-                display: inline-block;
-                // background-color: palegoldenrod;
-                margin: 0px auto
+                margin-top: 10px;
+                line-height: 20px
+            }
+
+            .newDetailGarid1 {
+                border: 1px solid #F0F0F0;
+                width: 100%;
+                margin-top: 40px;
             }
         }
+    }
 
+    #PageBox {
+        text-align: center
     }
 }
 
-.contactUs {
-    // width: 100%;
-    background: #FFFFFF;
-    margin: 60px auto 0;
-    padding-bottom: 80px;
-
-    .container {
-        // width: 100%;
-    }
-
-    .coreStrengths {
-        font-size: 24px;
-        color: #333333;
-        text-align: center;
-        margin-top: 60px;
-        height: 35px;
-
-    }
-
-    .garid1 {
-        text-align: center;
-        width: 127px;
-        margin: 20px auto;
-        border: 2px solid #D0DDF5;
-    }
-
-    .pcter {
-        margin-top: 20px;
-        color: #666666;
-
-    }
-
-    .contactUsTitle {
-
-        height: 140px;
-        border: 1px solid #CDCDCD;
-        margin: 40px auto;
-        position: relative;
-
-        .contactUsDetail1 {
-            font-size: 14px;
-            color: #666666;
-            line-height: 20px;
-            position: absolute;
-            top: 40px;
-            left: 10.51%;
-
-            span {
-                color: #151515;
-            }
-        }
-
-        .De1 {
-            left: 36.41%;
-        }
-
-        .De2 {
-            left: 72.90%;
-        }
-
-        .De3 {
-            top: 80px;
-
-        }
-
-        .De4 {
-            top: 80px;
-            left: 36.41%;
-
-        }
-
-        .De5 {
-            top: 80px;
-            left: 55.19%;
-
-        }
-
-        .De6 {
-            top: 80px;
-            left: 73.85%;
-
-        }
-    }
-
-    .picLogobOX {
-        height: 500px;
-        width: 100%;
-        background-color: palegoldenrod;
-
-        .picLogo {
-            width: 100%;
-            // height: 500px;
-        }
-    }
-
-}
-
-.abTop {
-    position: fixed;
-    top: 700px;
-    right: 50px;
-    font-size: 40px;
-    cursor: pointer;
-
-    a:hover,
-    a:visited,
-    a:link,
-    a:active {
-        text-decoration: none;
-    }
-
-    a {
-        text-decoration: none;
-    }
+.newDetailGarid1Last {
+    display: none
 }

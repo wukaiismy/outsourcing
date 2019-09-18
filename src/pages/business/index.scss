@@ -1,225 +1,220 @@
-.coreStrengthss {
-    .coreStrengths {
-        font-size: 24px;
-        color: #333333;
-        text-align: center;
-        margin-top: 60px;
-        height: 35px;
-
-    }
-
-    .garid1 {
-        text-align: center;
-        width: 127px;
-        margin: 20px auto;
-        border: 2px solid #D0DDF5;
-    }
-
-    .pcter {
-        margin-top: 20px;
-        color: #666666;
-
-    }
-}
-
-.coremainContent {
-    width: 100%;
-    height: 275px;
-
-    .centerSet {
-        // background-color: #1C3672;
-        padding: 0 4% 0 4%
-    }
-
-    .fastPay {
-
-        text-align: center;
-        padding: 1px 20px 1px 20px;
-
-        .fastPayImg1 {
-            margin-top: 60px;
-
-
-        }
-
-        .fastPayTitle {
-            font-size: 18px;
-            color: #1C3672;
-            height: 60px;
-            line-height: 60px;
-            // background-color: #FFFFFF
-        }
-
-        .fastPayContent {
-            font-size: 14px;
-            display: inline-block;
-            color: #666666;
-            height: 30px;
-            line-height: 20px;
-            position: relative;
-            top: 0px;
-
-            // background-color: #FFFFFF
-        }
-    }
-
-}
-
-.bigBox {
-    position: relative;
-    // background-color: palegoldenrod
-}
-
-.coreStrengthsContent {
-    background: url(../../images/bgg.png) no-repeat 0 0;
-    min-height: 354px;
-    width: 62.5%;
-    margin-top: 40px;
-    // text-align: center;
-    padding: 20px 1px 1px 1px;
-
-    .coreContentTitle {
-        font-family: PingFangSC-Medium;
-        font-size: 24px;
-        color: #FFFFFF;
-        min-height: 33px;
-        line-height: 33px;
-        margin-top: 60px;
-        margin: 20px 0 0 37.5%
-    }
-
-    .coreGaird {
-        border: 2px solid #FFFFFF;
-        width: 8.33%;
-        margin: 20px 0 0 37.5%
-    }
-
-    .coreContentDetails {
-        font-size: 14px;
-        color: #FFFFFF;
-        width: 40.83%;
-        min-height: 100px;
-        line-height: 20px;
-        margin: 40px 0 0 37.5%
-    }
-}
-
-.coreStrengthsBox {
-    width: 26.56%;
-    height: 570px;
-    position: absolute;
+.hearder {
     background: #FFFFFF;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.50);
-    border-radius: 6px;
-    top: 60px;
-    left: 54.69%;
-    padding: 40px 1.96% 10px 1.96%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.50);
+    width: 100%;
+    height: 120px;
+    line-height: 120px
+}
 
-    .coreStrengthsItem {
-        height: 50px;
-        // background-color: palegoldenrod;
-        margin: 40px 0 0 11%;
-        position: relative;
+.logoTop {
+    height: 60px;
 
-        .coreStrengthsLogo {
-            height: 50px;
-        }
+}
 
-        .coreStrengthsItemTitle {
-            font-family: PingFangSC-Medium;
-            font-size: 14px;
-            color: #1C3672;
-            position: relative;
-            top: -50px;
-            left: 55px;
-        }
+.nav,
+ul,
+li {
+    display: inline-block;
+    height: 120px;
+}
 
-        .coreStrengthsItemContent {
-            font-size: 14px;
-            color: #333333;
-            position: relative;
-            top: -45px;
-            left: 55px;
-            width: 75%;
-            // background-color: palegoldenrod
-        }
+.nav {
+    float: right;
+    padding-right: 20px;
+
+    ul,
+    li,
+    ol {
+        list-style: none;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #333333;
+
+    }
+
+    a:hover {
+        text-decoration: none
+    }
+
+    a:active {
+        text-decoration: none
     }
 
 }
 
-.theProcess {
-    margin-top: 280px
+ul .navItem {
+    margin-left: 48px
 }
 
-.theProcessBox {
-    // background-color: palegoldenrod;
-    height: 212px;
-    margin: 40px 0 40px 0;
-    // padding-left: 30px;
+.selected {
 
-    .theProcessItem {
-        width: 100%;
-        height: 212px;
-        border: 1px solid #DCDCDC;
-        border-radius: 6px;
-        position: relative;
-        margin-left: 20px;
 
-        .theProcessItemImg1 {
-            height: 64px;
-            position: absolute;
-            top: 30px;
-            left: 40px;
+    border-bottom: 4px solid #1C3672;
 
-        }
-
-        .theProcessItemImg2 {
-            height: 60px;
-            position: absolute;
-            top: 30px;
-            left: 60%;
-
-        }
-
-        .fastPayTitle {
-            font-family: PingFangSC-Medium;
-            font-size: 20px;
-            color: #333333;
-            height: 28px;
-            line-height: 28px;
-            margin: 114px 0 0 40px
-        }
-
-        .fastPayContent {
-            font-size: 14px;
-            color: #666666;
-            height: 20px;
-            line-height: 20px;
-            margin: 20px 0 0 40px
-        }
-
-    }
-
-    .theProcessItemImg3 {
-        // max-height: 48px;
-        width: 13%;
-        position: absolute;
-        top: 80px;
-        left: 96.77%;
+    a {
+        color: #1C3672;
     }
 }
 
-.jionUs {
-    background-image: linear-gradient(-180deg, #EBF1FC 0%, #D1DDF6 100%);
-    border-radius: 6px;
-    width: 257px;
-    height: 50px;
-    line-height: 50px;
+.mainContent {
+    background: #FFFFFF;
+    width: 100%;
+    height: 345px;
+}
+
+.centerSet {
+    text-align: center;
+}
+
+
+
+.imgTitle {
+    font-size: 50px;
+    color: #FFFFFF;
+    margin: 150px auto;
+    text-align: center;
+
+}
+
+.imgContent {
+    font-size: 36px;
+    color: #FFFFFF;
+
+}
+
+.Graid {
+    width: 100%;
+    height: 2px;
+    background-color: #f0f0f0
+}
+
+.fastPay {
+    // background-color: #00925f;
+    text-align: center;
+    padding: 1px 20px 1px 20px
+}
+
+.fastPayImg1 {
+    margin-top: 60px
+}
+
+.fastPayTitle {
     font-size: 18px;
     color: #1C3672;
+    height: 60px;
+    line-height: 60px;
+    // background-color: #FFFFFF
+}
+
+.fastPayContent {
+    font-size: 14px;
+    display: inline-block;
+    color: #666666;
+    height: 30px;
+    line-height: 20px;
+    position: relative;
+    top: 0px;
+
+    // background-color: #FFFFFF
+}
+
+.productCenter {
+    font-size: 24px;
+    color: #333333;
     text-align: center;
-    margin: 0px auto 80px;
-    cursor: pointer;
+    margin-top: 60px;
+    height: 35px;
+}
+
+.garid1 {
+    text-align: center;
+    width: 127px;
+    margin: 20px auto;
+    border: 2px solid #D0DDF5;
+}
+
+.pcter {
+    margin-top: 20px;
+    color: #666666;
+
+}
+
+.productCenterList {
+    // background-color: #00925f;
+    margin-top: 40px;
+    min-height: 418px;
+    position: relative;
+
+    .fastPay {
+        // background-color: #00925f;
+        text-align: left;
+        padding: 0px 1px 0px 0px;
+        background: #FFFFFF;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
+        border-radius: 6px;
+        width: 100%;
+        margin-right: 25px;
+        margin-bottom: 40px
+    }
+
+    .sssfa {
+        margin-right: 0px
+    }
+
+    .fastPayImg {
+        height: 187px;
+
+    }
+
+    .fastPayTitle {
+        font-size: 18px;
+        color: #333333;
+        position: absolute;
+        top: 2px;
+        left: 185px;
+    }
+
+    .garid2 {
+        border: 1px solid #F0F0F0;
+        width: 46px;
+        position: absolute;
+        top: 65px;
+        left: 185px;
+
+    }
+
+    .fastPayContent {
+        width: 38%;
+        position: absolute;
+        top: 85px;
+        left: 185px;
+    }
+
+}
+
+.bankList {
+    width: 100%;
+    height: 400px;
+    background: #D0DDF5;
+    text-align: center;
+
+    .G11 {
+        border: 2px solid #FFFFFF;
+    }
+
+    .fastPayImg {
+        height: 60px;
+    }
+
+    .bankItem {
+        margin: 60px auto;
+        width: 720px;
+        text-align: center;
+    }
 }
 
 #lunBo1 img {

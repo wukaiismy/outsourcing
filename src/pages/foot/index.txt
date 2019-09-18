@@ -5,7 +5,7 @@
                 <img class="footLogo" src="./assets/img/logofoot.png" alt="">
                 <div class="footTel">服务热线：028-86155671</div>
                 <div class="footTel">商务合作：028-86155671</div>
-                <div class="footTel">邮箱地址：ifepay@163.com</div>
+                <div class="footTel">邮箱：wukaiismyh@gmail.com</div>
                 <div class="footTel">公司地址：成都市天府大道交子金融科技中心</div>
             </div>
             <div class="col-xs-4 col-sm-4 ">

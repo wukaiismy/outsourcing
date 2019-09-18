@@ -8,7 +8,7 @@
                 <li class="navItem n3"><a href="./business.html">服务大厅</a></li>
                 <li class="navItem n4"><a href="./aboutus.html">资料中心</a></li>
                 <li class="navItem n5"><a href="./mediashow.html">学习平台</a></li>
-                <li class="navItem n6"><a href="./applycooperation.html">服务网点</a></li>
+                <li class="navItem n6"><a href="./serviceNet.html">服务网点</a></li>
                 <li class="navItem n7"><a href="./applycooperation.html">免费加盟</a></li>
             </ul>
         </div>
