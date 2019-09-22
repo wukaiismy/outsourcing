@@ -11,10 +11,10 @@ $(function() {
   $(".n7").addClass("selected");
   $(".submit").click(function() {
     $(".models").attr("id", "");
-    if ($("#contact_user").val() && $("#mobile").val()) {
+    if ($("#name").val() && $("#mobile").val()) {
       $(".models").attr("id", "myModal");
       var datas = $("form").serialize();
-      var targetUrl = "//www.ifepay.com/website/front/info/";
+      var targetUrl = "/api/yanghua_edu/api/other_module/join_hand/";
       $.ajax({
         type: "post",
         url: targetUrl,
@@ -22,9 +22,9 @@ $(function() {
         contentType: "application/x-www-form-urlencoded; charset=utf-8",
         dataType: "json",
         success: function(data) {
-          // console.log(data);
+          console.log(data);
 
-          if (data.code == "200") {
+          if (data.code == "1") {
             $(".modal-body").html(data.msg);
             // 重置表格
             $("form")[0].reset();

@@ -24,14 +24,9 @@
     <div class="container msgBigBoxA ">
         <div class="msgBigBox">
             <form action="" method="post">
-                <div class="msgItem">
-                    <span class="msgItemTitle">公司名称：</span>
-                    <input id="company_name" type="text" name="company_name" class="form-control msgItemIpt"
-                        placeholder="请输入公司名字" aria-describedby="basic-addon1">
-                </div>
-                <div class="msgItem">
+
+                <!-- <div class="msgItem">
                     <span class="msgItemTitle">所属行业：</span>
-                    <!-- <input type="text" id="industry" name="industry" hidden> -->
                     <div class="form-group">
                         <select id="industry" name="industry" class="selectpicker show-tick msgItemIpt ms"
                             title="请选择申请类型" data-live-search="true" data-size="5">
@@ -45,34 +40,42 @@
                             <option>娱乐</option>
                         </select>
                     </div>
-                </div>
+                </div> -->
                 <div class="msgItem">
-                    <span class="msgItemTitle">申请类型：</span>
+                    <span class="msgItemTitle">加盟项目：</span>
                     <!-- <input type="text" id="types_of" name="types_of" hidden> -->
                     <div class="form-group">
-                        <select id="types_of" name="types_of" class="selectpicker show-tick msgItemIpt ms"
+                        <select id="join_content" name="join_content" class="selectpicker show-tick msgItemIpt ms"
                             title="请选择申请类型" data-live-search="true" data-size="5">
-                            <option disabled>请选择申请类型</option>
-                            <option value="1" label="商户加盟">商户加盟</option>
-                            <option value="2" label="渠道商加盟">渠道商加盟</option>
+                            <option disabled>请选择加盟项目</option>
+                            <option value="1" label="平台加盟">平台加盟</option>
+                            <option value="2" label="投资加盟">投资加盟</option>
                         </select>
                     </div>
-
-
-                </div>
-                <div class="msgItem">
-                    <span class="msgItemTitle">公司地址：</span>
-                    <input type="text" id="adr" name="adr" class="form-control msgItemIpt" placeholder="请输入公司地址"
-                        aria-describedby="basic-addon1">
                 </div>
                 <div class="msgItem">
                     <span class="msgItemTitle t1">* 联系人：</span>
-                    <input type="text" id="contact_user" name="contact_user" class="form-control msgItemIpt"
-                        placeholder="请输入联系人" aria-describedby="basic-addon1">
+                    <input type="text" id="name" name="name" class="form-control msgItemIpt" placeholder="请输入联系人"
+                        aria-describedby="basic-addon1">
                 </div>
                 <div class="msgItem">
                     <span class="msgItemTitle t2">*联系电话：</span>
                     <input type="number" id="mobile" name="mobile" class="form-control msgItemIpt" placeholder="请输入联系电话"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="msgItem">
+                    <span class="msgItemTitle  t1"> &nbsp;&nbsp;省市区：</span>
+                    <input type="text" id="address" name="address" class="form-control msgItemIpt"
+                        placeholder="省市区，比如：四川省，成都市" aria-describedby="basic-addon1">
+                </div>
+                <div class="msgItem">
+                    <span class="msgItemTitle">详细地址：</span>
+                    <input type="text" id="detailed_address" name="detailed_address" class="form-control msgItemIpt"
+                        placeholder="请输入地址" aria-describedby="basic-addon1">
+                </div>
+                <div class="msgItem">
+                    <span class="msgItemTitle">备注说明：</span>
+                    <input type="text" id="remarks" name="remarks" class="form-control msgItemIpt" placeholder="备注"
                         aria-describedby="basic-addon1">
                 </div>
                 <div class="msgItemShows">＊内容为必填项</div>

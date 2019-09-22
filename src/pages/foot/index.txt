@@ -2,7 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-4 col-sm-4">
-                <img class="footLogo" src="./assets/img/logofoot.png" alt="">
+                /*<img class="footLogo" src="" alt="">*/
+                <div class="giass"></div>
                 <div class="footTel">服务热线：028-86155671</div>
                 <div class="footTel">商务合作：028-86155671</div>
                 <div class="footTel">邮箱：wukaiismyh@gmail.com</div>

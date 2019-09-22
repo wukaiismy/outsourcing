@@ -2,10 +2,9 @@ import header from "../text/index.txt";
 import footer from "../foot/index.txt";
 import "./index.scss";
 import "../common/index.js";
+// import { api } from "../../config/httpUrl";
 import "bootstrap/dist/css/bootstrap-theme.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import img1 from "../../images/baanner/20131220135218_6EZzbf.jpg";
-import img2 from "../../images/baanner/20140211101609_ZtrES1.jpg";
 $(function() {
   /*
    * 引入公共文件
@@ -15,83 +14,83 @@ $(function() {
 
   $("#headerHtml").html(header);
   $("#footHtml").html(footer);
-  console.log("我是首页");
-  // 轮播图
-  var lis1 = "";
-  var str1 = "";
-  var res1 = [img1, img2];
-  $.each(res1, function(ind, item) {
-    if (ind < 2) {
-      if (ind == "0") {
-        str1 =
-          `<div class="item active"><img src="` + item + ` " alt="" /></div>`;
-        lis1 = `<li data-target="#carouselMenu" data-slide-to="0" class="active"></li>`;
-      } else {
-        str1 += ` <div class="item "><img src="` + item + ` " alt="" /></div>`;
-        lis1 +=
-          ` <li data-target="#carouselMenu" data-slide-to="` + ind + `"></li>`;
-      }
-    }
+
+  $("#product").click(function() {
+    console.log("在线报名");
+    $(".models").attr("id", "myModal");
+    $(".modal-body").html("联系人和联系电话必填！");
   });
-
-  $("#numbers").html(lis1);
-  $("#lunBo").html(str1);
-
-  $(".serportButton").click(function() {
+  $("#serach").click(function() {
+    location.href = "./serviceNet.html";
+  });
+  $("#applycooperation").click(function() {
     location.href = "./applycooperation.html";
   });
-  var Url = "//www.ifepay.com/website/front/showimg/";
+  var UrlBanner =
+    "/api/yanghua_edu/api/banner_img/banner_img/?banner_position_name=top";
   // 获取初始化数据
-  // $.ajax({
-  //   url: Url,
-  //   type: "GET",
-  //   dataType: "jsonp", //指定服务器返回的数据类型
-  //   jsonp: "theFunction", //指定参数名称
-  //   jsonpCallback: "showData", //指定回调函数名称
-  //   success: function(res) {
-  //     // console.log(6666);
-  //     // console.log(res);
-  //     var lis = "";
-  //     var str = "";
+  $.ajax({
+    url: UrlBanner,
+    type: "GET",
+    dataType: "json", //指定服务器返回的数据类型
+    success: function(res) {
+      console.log(6666);
+      console.log(res);
+      var lis = "";
+      var str = "";
+      if (res.code == 1) {
+        var dataList = res.data.ret;
+      }
+      $.each(dataList, function(ind, item) {
+        if (ind == "0") {
+          str =
+            `<div class="item active"><img src="` +
+            item.image +
+            ` " alt="" /></div>`;
+          lis = `<li data-target="#carouselMenu" data-slide-to="0" class="active"></li>`;
+        } else {
+          str +=
+            ` <div class="item "><img src="` +
+            item.image +
+            ` " alt="" /></div>`;
+          lis +=
+            ` <li data-target="#carouselMenu" data-slide-to="` +
+            ind +
+            `"></li>`;
+        }
+      });
 
-  //     $.each(res, function(ind, item) {
-  //       if (ind < 2) {
-  //         if (ind == "0") {
-  //           str =
-  //             `<div class="item active"><img src="https://www.ifepay.com/website/media/` +
-  //             item +
-  //             ` " alt="" /></div>`;
-  //           lis = `<li data-target="#carouselMenu" data-slide-to="0" class="active"></li>`;
-  //         } else {
-  //           str +=
-  //             ` <div class="item "><img src="//www.ifepay.com/website/media/` +
-  //             item +
-  //             ` " alt="" /></div>`;
-  //           lis +=
-  //             ` <li data-target="#carouselMenu" data-slide-to="` +
-  //             ind +
-  //             `"></li>`;
-  //         }
-  //       }
-  //     });
+      $("#numbers").html(lis);
+      $("#lunBo").html(str);
+      // msgReq();
+      // msgReq1();
+    },
+    error: function(XMLHttpRequest, textStatus, errorThrown) {
+      console.log("请求数据异常，状态码：" + XMLHttpRequest.status);
+    }
+  });
+  // 获取中部图片
+  getImage("center", [".fastPayImg"]);
+  // 获取中右图片
+  getImage("center-right", [".img-circleS"]);
+  // 获取底部图片
+  getImage("right-bottom", [".img12"]);
 
-  //     $("#numbers").html(lis);
-  //     $("#lunBo").html(str);
-  //     msgReq();
-  //     msgReq1();
-  //   },
-  //   error: function(XMLHttpRequest, textStatus, errorThrown) {
-  //     console.log("请求数据异常，状态码：" + XMLHttpRequest.status);
-  //   }
-  // });
+  const dataListArr = [[], [], []];
+  // 行业动态
+  msgReq(1);
+  // 专业指导
+  msgReq(2, dataListArr);
+  // 考试攻略
+  msgReq(3, dataListArr);
+  // 报考指南
+  msgReq(4, dataListArr);
 
   // 鼠标移入事件
   $(".navTitlesItem").each(function(ind, item) {
-    console.log(ind);
-    console.log(item);
-    console.log(this);
     $(this).on("mouseover", function() {
       console.log(ind);
+      tebleShow(dataListArr[ind], choosed);
       $(".navTitlesItem")
         .removeClass("navTitlesItemHover")
         .eq(ind)
@@ -104,18 +103,25 @@ $(function() {
 var strs = function(data, id) {
   var str = "";
   $.each(data, function(ind, item) {
-    if (ind < 6) {
-      str +=
-        '<div class="IndustryDynamicItemShow"><span class="IndustryDynamicItemTitls"> ' +
-        item[1] +
-        "</span><span  class='times'>" +
-        item[3].substr(0, 10) +
-        "</span></div>";
-    }
+    str +=
+      `<div class="item">
+      <img class="logoiMG" src="` +
+      item.cover_img +
+      `" alt="" />
+      <div class="rightBox">
+        <div class="title">` +
+      item.title +
+      `</div>
+        <div class="content">` +
+      item.content +
+      `</div>
+      </div>
+    </div>
+    <div class="garid"></div>`;
   });
   $(id).html(str);
 };
-// 封装函数
+// 跳转
 var links = function(data, id) {
   let items1 = $(id);
   items1.each(function(index, el) {
@@ -124,43 +130,86 @@ var links = function(data, id) {
     });
   });
 };
-// 获取行业新闻列表;
-var msgReq = function() {
-  var new_nndustry = "//www.ifepay.com/website/front/new_nndustry/";
+// 获取行业动态;
+var msgReq = function(id, dataListArr) {
+  var new_nndustry =
+    "/api/yanghua_edu/api/graphic_module/graphic/?graphic_type_id=" + id;
   $.ajax({
     url: new_nndustry,
     type: "GET",
-    dataType: "jsonp", //指定服务器返回的数据类型
-    jsonp: "theFunction", //指定参数名称
-    jsonpCallback: "showData2", //指定回调函数名称
+    dataType: "json", //指定服务器返回的数据类型
     success: function(res) {
-      // console.log("行业新闻");
-      // console.log(res);
-      strs(res.ret, "#fastPayRight");
-      links(res.ret, "#fastPayRight div");
+      if (id == 1) {
+        console.log("行业动态");
+        console.log(res);
+        var leftNav = res.data.ret[0];
+        $(".fastPayLiftTitle").html(leftNav.title);
+        $(".fastPayLiftContent").html(leftNav.content);
+        // 中间列表项
+        var contents = res.data.ret.slice(1, 5);
+        strs(contents, "#fastPayCenter");
+      } else if (id == 2) {
+        dataListArr[1] = res.data.ret;
+      } else if (id == 3) {
+        dataListArr[0] = res.data.ret;
+        tebleShow(dataListArr[0], choosed);
+      } else if (id == 4) {
+        dataListArr[2] = res.data.ret;
+      }
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
       console.log("请求数据异常，状态码：" + XMLHttpRequest.status);
     }
   });
 };
-// 获取政策法规列表;
-var msgReq1 = function() {
-  var new_policy = "//www.ifepay.com/website/front/new_policy/";
+
+// 获取图片
+var getImage = function(url, imgClass) {
+  // 获取底部图片
+  var UrlImg =
+    "/api/yanghua_edu/api/banner_img/banner_img/?banner_position_name=" + url;
+  // 获取初始化数据
   $.ajax({
-    url: new_policy,
+    url: UrlImg,
     type: "GET",
-    dataType: "jsonp", //指定服务器返回的数据类型
-    jsonp: "theFunction", //指定参数名称
-    jsonpCallback: "showData1", //指定回调函数名称
+    dataType: "json", //指定服务器返回的数据类型
     success: function(res) {
-      // console.log("政策法规");
-      // console.log(res);
-      strs(res.ret, "#fastPayNewshow");
-      links(res.ret, "#fastPayNewshow div");
+      if (res.code == 1) {
+        // console.log(res);
+        if (res.data.ret) {
+          $.each(res.data.ret, function(ind, item) {
+            $(imgClass[ind]).attr("src", item.image);
+          });
+        }
+      }
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
       console.log("请求数据异常，状态码：" + XMLHttpRequest.status);
     }
   });
+};
+
+// 教育动态
+var tebleShow = function(data, id) {
+  var str = "";
+  $.each(data, function(ind, item) {
+    if (ind < 3) {
+      str +=
+        ` <div class="contentBox row">
+    <div class="col-xs-2 col-sm-2 col-md-2 times">` +
+        item.create_time.substr(0, 10) +
+        `</div>
+    <div class="col-xs-10 col-sm-10 col-md-10">
+      <div class="title">` +
+        item.title +
+        `</div>
+      <div class="content">` +
+        item.content +
+        `</div>
+    </div>
+  </div>
+  <div class="garids"></div>`;
+    }
+  });
+  $(id).html(str);
 };
