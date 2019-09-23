@@ -25,7 +25,7 @@
     <div class="rightNav">
       <table width="325" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="108" id="product">
+          <td width="108" id="product" data-toggle="modal" data-target="#myModal">
             <img class="tipImg" src="../../images/new/renyuanbaoming.png" alt="在线报名" />
             <div>在线报名</div>
           </td>
@@ -93,15 +93,61 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
               aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">消息提示</h4>
+          <h4 class="modal-title" id="myModalLabel">在线报名</h4>
         </div>
         <div class="modal-body">
-
+          <form action="" method="post">
+            <div class="msgItem">
+              <span class="msgItemTitle t1">&nbsp;&nbsp;&nbsp;&nbsp;* 姓名：</span>
+              <input type="text" id="name" name="name" class="form-control msgItemIpt" placeholder="请输入联系人"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="msgItem">
+              <span class="msgItemTitle t1">&nbsp;&nbsp;&nbsp;&nbsp;* 电话：</span>
+              <input type="number" id="mobile" name="mobile" class="form-control msgItemIpt" placeholder="请输入联系电话"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="msgItem">
+              <span class="msgItemTitle">报考类型：</span>
+              <div class="form-group">
+                <select id="industry" name="industry" class="selectpicker show-tick msgItemIpt ms" title="请选择申请类型"
+                  data-live-search="true" data-size="5">
+                  <option disabled>请选择报考类型</option>
+                  <option>小学</option>
+                  <option>初中</option>
+                  <option>高中</option>
+                  <option>中专</option>
+                  <option>大专</option>
+                  <option>大学</option>
+                  <option>研究生</option>
+                </select>
+              </div>
+            </div>
+            <div class="msgItem">
+              <span class="msgItemTitle">您的学历：</span>
+              <!-- <input type="text" id="types_of" name="types_of" hidden> -->
+              <div class="form-group">
+                <select id="join_content" name="join_content" class="selectpicker show-tick msgItemIpt ms"
+                  title="请选择您的学历" data-live-search="true" data-size="5">
+                  <option disabled>请选择您的学历</option>
+                  <option value="1" label="高中">高中</option>
+                  <option value="2" label="大学">大学</option>
+                </select>
+              </div>
+            </div>
+            <div class="msgItem">
+              <span class="msgItemTitle">备注说明：</span>
+              <input type="text" id="remarks" name="remarks" class="form-control msgItemIpt" placeholder="备注"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="msgItemShows">＊内容为必填项</div>
+            <div class="submit">提交</div>
+          </form>
         </div>
-        <div class="modal-footer">
+        <!-- <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
-          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        </div>
+        
+        </div> -->
       </div>
     </div>
   </div>
