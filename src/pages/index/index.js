@@ -27,7 +27,7 @@ $(function() {
     location.href = "./applycooperation.html";
   });
   var UrlBanner =
-    "/api/yanghua_edu/api/banner_img/banner_img/?banner_position_name=top";
+    "/yanghua_edu/api/banner_img/banner_img/?banner_position_name=top";
   // 获取初始化数据
   $.ajax({
     url: UrlBanner,
@@ -104,10 +104,10 @@ var strs = function(data, id) {
   var str = "";
   $.each(data, function(ind, item) {
     str +=
-      `<div class="item">
+      `<div class="item"><div class="logoiMGBox">
       <img class="logoiMG" src="` +
       item.cover_img +
-      `" alt="" />
+      `" alt="" /></div>
       <div class="rightBox">
         <div class="title">` +
       item.title +
@@ -133,7 +133,7 @@ var links = function(data, id) {
 // 获取行业动态;
 var msgReq = function(id, dataListArr) {
   var new_nndustry =
-    "/api/yanghua_edu/api/graphic_module/graphic/?graphic_type_id=" + id;
+    "/yanghua_edu/api/graphic_module/graphic/?graphic_type_id=" + id;
   $.ajax({
     url: new_nndustry,
     type: "GET",
@@ -167,7 +167,7 @@ var msgReq = function(id, dataListArr) {
 var getImage = function(url, imgClass) {
   // 获取底部图片
   var UrlImg =
-    "/api/yanghua_edu/api/banner_img/banner_img/?banner_position_name=" + url;
+    "/yanghua_edu/api/banner_img/banner_img/?banner_position_name=" + url;
   // 获取初始化数据
   $.ajax({
     url: UrlImg,

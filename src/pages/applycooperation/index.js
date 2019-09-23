@@ -14,7 +14,7 @@ $(function() {
     if ($("#name").val() && $("#mobile").val()) {
       $(".models").attr("id", "myModal");
       var datas = $("form").serialize();
-      var targetUrl = "/api/yanghua_edu/api/other_module/join_hand/";
+      var targetUrl = "/yanghua_edu/api/other_module/join_hand/";
       $.ajax({
         type: "post",
         url: targetUrl,

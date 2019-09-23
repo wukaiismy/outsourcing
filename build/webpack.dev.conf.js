@@ -22,11 +22,11 @@ const webpackConfigDev = {
     hot: true, // 开启热更新
     // 本地测试权限开关接口
     proxy: {
-      "/api": {
-        target: "http://94.191.125.82",
+      "/yanghua_edu": {
+        target: "http://94.191.125.82/yanghua_edu",
         changeOrigin: true,
         pathRewrite: {
-          "^/api": ""
+          "^/yanghua_edu": ""
         }
       }
     }

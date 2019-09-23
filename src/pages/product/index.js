@@ -15,7 +15,7 @@ $(function() {
   $("#footHtml").html(footer);
   $(".navItem").removeClass("selected");
   $(".n2").addClass("selected");
-  var Url = "/api/yanghua_edu/api/project_module/service_content/";
+  var Url = "/yanghua_edu/api/project_module/service_content/";
   // 获取初始化数据
   $.ajax({
     url: Url,
@@ -42,7 +42,7 @@ var strCenter = function(data) {
       `<div class="col-xs-4 col-sm-4 ">
     <div class="fastPay">
       <img class="fastPayImg" src="` +
-      (item.cover_img ? "../../images/dbjytu.png" : item.cover_img) +
+      item.cover_img +
       `" alt="">
       <div class="fastPayTitle">` +
       item.name +

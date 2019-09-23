@@ -206,6 +206,12 @@ ul .navItem {
 		background-color: #fff;
 		position: relative;
 
+		.logoiMGBox {
+			width: 85px;
+			height: 85px;
+			display: inline-block;
+		}
+
 		.logoiMG {
 			width: 85px;
 			height: 85px;
@@ -223,8 +229,11 @@ ul .navItem {
 				color: #999;
 				margin-top: 10px;
 				display: -webkit-box;
+				// text-overflow: ellipsis;
 				overflow: hidden;
-				-webkit-box-orient: vertical;
+				/*! autoprefixer: off */
+				-webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+				/* autoprefixer: on */
 				-webkit-line-clamp: 3;
 			}
 		}
@@ -311,8 +320,11 @@ ul .navItem {
 				margin-top: 10px;
 				color: #7c7c7c;
 				display: -webkit-box;
+				text-overflow: ellipsis;
 				overflow: hidden;
-				-webkit-box-orient: vertical;
+				/*! autoprefixer: off */
+				-webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+				/* autoprefixer: on */
 				-webkit-line-clamp: 3;
 			}
 		}

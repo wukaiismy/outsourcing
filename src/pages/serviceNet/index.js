@@ -12,7 +12,7 @@ $(function() {
   $(".n6").addClass("selected");
 
   // 获取服务点列表
-  var UrlBanner = "/api/yanghua_edu/api/service_point/service_point/";
+  var UrlBanner = "/yanghua_edu/api/service_point/service_point/";
   $.ajax({
     url: UrlBanner,
     type: "GET",
