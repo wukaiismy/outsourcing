@@ -22,9 +22,9 @@ $(function() {
   });
   // 提交在线报名数据
   $(".submit").click(function() {
-    $(".models").attr("id", "");
+    $(".models1").attr("id", "");
     if ($("#name").val() && $("#mobile").val()) {
-      $(".models").attr("id", "myModal");
+      $(".models1").attr("id", "myModal1");
       var datas = $("form").serialize();
       var targetUrl = "/yanghua_edu/api/other_module/online_sign/";
       $.ajax({
@@ -35,24 +35,24 @@ $(function() {
         dataType: "json",
         success: function(data) {
           console.log(data);
-
+          $("#myModal").modal("hide");
           if (data.code == "1") {
-            $(".modal-body").html(data.msg);
+            $(".modal-body1").html(data.msg);
             // 重置表格
             $("form")[0].reset();
           } else {
-            $(".modal-body").html("提交错误，请重试！");
+            $(".modal-body1").html("提交错误，请重试！");
           }
         },
         error: function(err) {
-          $(".models").attr("id", "myModal");
+          $(".models1").attr("id", "myModal1");
           console.log(err);
-          $(".modal-body").html("未知错误！");
+          $(".modal-body1").html("未知错误！");
         }
       });
     } else {
-      $(".models").attr("id", "myModal");
-      $(".modal-body").html("联系人和联系电话必填！");
+      $(".models1").attr("id", "myModal1");
+      $(".modal-body1").html("联系人和联系电话必填！");
     }
   });
   $("#serach").click(function() {

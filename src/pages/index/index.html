@@ -54,8 +54,7 @@
         </div>
       </div>
       <div class="col-xs-4 col-sm-4 col-md-4 ltemss">
-        <div class="fastPayCenter" id="fastPayCenter">
-        </div>
+        <div class="fastPayCenter" id="fastPayCenter"></div>
       </div>
       <div class="col-xs-4 col-sm-4 col-md-4">
         <img class="img-circleS" src="" alt="" />
@@ -76,8 +75,7 @@
           <div class="navTitlesItem">专业指导</div>
           <div class="navTitlesItem">报考指南</div>
         </div>
-        <div id="choosed">
-        </div>
+        <div id="choosed"></div>
       </div>
       <div class="col-xs-5 col-sm-5 col-md-5">
         <img class="img12" src="" alt="" />
@@ -91,8 +89,9 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-              aria-hidden="true">&times;</span></button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <h4 class="modal-title" id="myModalLabel">在线报名</h4>
         </div>
         <div class="modal-body">
@@ -100,18 +99,18 @@
             <div class="msgItem">
               <span class="msgItemTitle t1">&nbsp;&nbsp;&nbsp;&nbsp;* 姓名：</span>
               <input type="text" id="name" name="name" class="form-control msgItemIpt" placeholder="请输入联系人"
-                aria-describedby="basic-addon1">
+                aria-describedby="basic-addon1" />
             </div>
             <div class="msgItem">
               <span class="msgItemTitle t1">&nbsp;&nbsp;&nbsp;&nbsp;* 电话：</span>
               <input type="number" id="mobile" name="mobile" class="form-control msgItemIpt" placeholder="请输入联系电话"
-                aria-describedby="basic-addon1">
+                aria-describedby="basic-addon1" />
             </div>
             <div class="msgItem">
               <span class="msgItemTitle">报考类型：</span>
               <div class="form-group">
-                <select id="industry" name="industry" class="selectpicker show-tick msgItemIpt ms" title="请选择申请类型"
-                  data-live-search="true" data-size="5">
+                <select id="service_content_id" name="service_content_id" class="selectpicker show-tick msgItemIpt ms"
+                  title="请选择申请类型" data-live-search="true" data-size="5">
                   <option disabled>请选择报考类型</option>
                   <option>小学</option>
                   <option>初中</option>
@@ -127,8 +126,8 @@
               <span class="msgItemTitle">您的学历：</span>
               <!-- <input type="text" id="types_of" name="types_of" hidden> -->
               <div class="form-group">
-                <select id="join_content" name="join_content" class="selectpicker show-tick msgItemIpt ms"
-                  title="请选择您的学历" data-live-search="true" data-size="5">
+                <select id="education" name="education" class="selectpicker show-tick msgItemIpt ms" title="请选择您的学历"
+                  data-live-search="true" data-size="5">
                   <option disabled>请选择您的学历</option>
                   <option value="1" label="高中">高中</option>
                   <option value="2" label="大学">大学</option>
@@ -137,11 +136,11 @@
             </div>
             <div class="msgItem">
               <span class="msgItemTitle">备注说明：</span>
-              <input type="text" id="remarks" name="remarks" class="form-control msgItemIpt" placeholder="备注"
-                aria-describedby="basic-addon1">
+              <input type="text" id="description" name="description" class="form-control msgItemIpt" placeholder="备注"
+                aria-describedby="basic-addon1" />
             </div>
             <div class="msgItemShows">＊内容为必填项</div>
-            <div class="submit">提交</div>
+            <div class="submit" data-toggle="modal" data-target="#myModal1">提交</div>
           </form>
         </div>
         <!-- <div class="modal-footer">
@@ -151,9 +150,26 @@
       </div>
     </div>
   </div>
+  <!-- Modal -->
+  <div class="modal fade models1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel1">消息提示</h4>
+        </div>
+        <div class="modal-body1">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="footHtml"></div>
-
-
 </body>
 
 </html>
