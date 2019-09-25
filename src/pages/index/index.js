@@ -156,12 +156,12 @@ var strs = function(data, id) {
   });
   $(id).html(str);
 };
-// 跳转
+// 跳转详情页面
 var links = function(data, id) {
   let items1 = $(id);
   items1.each(function(index, el) {
     $(this).on("click", function() {
-      location.href = "./mediadetail.html?id=" + data[index][0];
+      location.href = "./mediadetail.html?urls=index&&id=" + data[index].id;
     });
   });
 };
@@ -182,7 +182,10 @@ var msgReq = function(id, dataListArr) {
         $(".fastPayLiftContent").html(leftNav.content);
         // 中间列表项
         var contents = res.data.ret.slice(1, 5);
+
         strs(contents, "#fastPayCenter");
+        // 跳转到详情
+        links(contents, "#fastPayCenter .title");
       } else if (id == 2) {
         dataListArr[1] = res.data.ret;
       } else if (id == 3) {
@@ -247,4 +250,7 @@ var tebleShow = function(data, id) {
     }
   });
   $(id).html(str);
+
+  // 跳转到详情
+  links(data, "#choosed .title");
 };

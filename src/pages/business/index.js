@@ -13,7 +13,7 @@ $(function() {
   $(".navItem").removeClass("selected");
   $(".n3").addClass("selected");
 
-  var Url = "/yanghua_edu/api/project_module/service_content/";
+  var Url = "/yanghua_edu/api/project_module/server_hall/";
   // 获取初始化数据
   $.ajax({
     url: Url,
@@ -24,6 +24,7 @@ $(function() {
       console.log(res);
       if (res.code == 1) {
         strCenter(res.data.ret);
+        links(res.data.ret, ".productCenterList .fastPay");
       }
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -53,4 +54,13 @@ var strCenter = function(data) {
   </div>`;
   });
   $(".productCenterList").html(str);
+};
+// 跳转详情页面
+var links = function(data, id) {
+  let items1 = $(id);
+  items1.each(function(index, el) {
+    $(this).on("click", function() {
+      location.href = "./mediadetail.html?urls=business&&id=" + data[index].id;
+    });
+  });
 };

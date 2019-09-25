@@ -6,152 +6,32 @@
         min-height: 367px;
         width: 100%;
         margin-bottom: 60px;
-        // background-color: palegoldenrod;
-        text-align: right;
+        text-align: center;
 
-        .mediaAllNewsList {
-            min-height: 367px;
-            width: 20.83%;
-            display: inline-block;
-            background: #1C3672;
-            border-radius: 6px;
-            padding: 1px 1px 0px 1px;
-            position: absolute;
-            text-align: center;
-            left: 0px;
-
-            .mediaAllNewsTitle {
-                font-size: 24px;
-                color: #FFFFFF;
-                height: 33px;
-                line-height: 33px;
-                margin: 131px auto 0
-            }
-
-            .mediaAllNewsGarid {
-                width: 90px;
-                border: 2px solid #FFFFFF;
-                margin: 20px auto
-            }
-
-            .mediaAllNewsTitleS {
-                font-size: 20px;
-                margin: 20px auto;
-                color: #FFFFFF;
-            }
+        .items {
+            cursor: pointer;
+            border: #1C3672 1px solid;
+            border-radius: 8px;
+            margin-bottom: 15px
         }
 
-        .mediaAllNewsRight {
-            min-height: 367px;
-            width: 79.20%;
-            display: inline-block;
-
-            // margin-left: 10px;
-            position: relative;
-
-            .mediaAllNewsList {
-                width: 91.58%;
-                height: 367px;
-                display: inline-block;
-                // background: cadetblue;
-                background-color: #f9f9f9;
-
-                .itemShows {
-                    // border: 1px solid palegreen
-                }
-
-                .mediaAllNewsListItem {
-                    width: 97%;
-                    height: 367px;
-                    background: #FFFFFF;
-                    border-radius: 6px;
-                    margin-left: 7%;
-                    cursor: pointer;
-
-                    .fastPayImg1 {
-                        height: 140px;
-                        width: 100%;
-                        margin: 0px
-                    }
-
-                    .fastPayTitle {
-                        font-size: 16px;
-                        color: #333333;
-                        width: 97%;
-                        line-height: 22px;
-                        margin: 20px auto 0;
-                        text-align: left
-                    }
-
-                    .fastPayContent {
-                        display: inline-block;
-                        // background-color: palegoldenrod;
-                        font-size: 14px;
-                        color: #666666;
-                        width: 97%;
-                        height: 60px;
-                        line-height: 20px;
-                        margin: 20px auto 0;
-                        text-align: left;
-
-                        display: -webkit-box;
-                        // text-overflow: ellipsis;
-                        overflow: hidden;
-                        /*! autoprefixer: off */
-                        -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
-                        /* autoprefixer: on */
-                        -webkit-line-clamp: 3;
-                    }
-
-                    .fastPayTime {
-                        font-size: 12px;
-                        color: #999999;
-                        width: 224px;
-                        line-height: 22px;
-                        margin: 10px auto 0;
-                        text-align: left
-                    }
-
-                    .ft1 {
-                        margin: 0px auto;
-                    }
-                }
-
-                // .media1 {
-                //     margin-left: 5%
-                // }
-
-                // .media2 {
-                //     margin-left: 2%
-                // }
-            }
-
-            .moreNews {
-                height: 367px;
-                width: 60px;
-                display: inline-block;
-                background-color: #fff;
-                position: absolute;
-                top: 0px;
-                right: -80px;
-                font-size: 20px;
-                color: #1C3672;
-                padding: 107px 20px 20px 20px;
-                text-align: center;
-                cursor: pointer;
-
-                .moreImg {
-                    margin-top: 10px
-                }
-            }
+        .mediaAllNewsTitle {
+            font-size: 24px;
+            color: #000;
+            height: 33px;
+            line-height: 33px;
+            margin: 30px auto 10px;
+            text-align: center
         }
-    }
-}
 
-.banner2s {
-    width: 100%;
+        .imgs {
+            height: 200px;
+            text-align: center
+        }
 
-    .banner2sImg {
-        width: 100%;
+        .content {
+            color: #000;
+            padding: 15px;
+        }
     }
 }

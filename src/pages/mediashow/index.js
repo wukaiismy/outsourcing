@@ -7,46 +7,7 @@ $(function() {
   $("#footHtml").html(footer);
   $(".navItem").removeClass("selected");
   $(".n5").addClass("selected");
-
-  // 请求新闻数据
-  // msgReq(
-  //   "new_all",
-  //   "showData4",
-  //   "#mediaAllNews",
-  //   "#mediaAllNews  .mediaAllNewsListItem"
-  // );
-  // msgReq(
-  //   "new_nndustry",
-  //   "showData2",
-  //   "#mediaAllNews1",
-  //   "#mediaAllNews1  .mediaAllNewsListItem"
-  // );
-  // msgReq(
-  //   "new_policy",
-  //   "showData1",
-  //   "#mediaAllNews2",
-  //   "#mediaAllNews2  .mediaAllNewsListItem"
-  // );
-  // 平台新闻
-  // msgReq(
-  //   "new_plat",
-  //   "showData3",
-  //   "#mediaAllNews3",
-  //   "#mediaAllNews3  .mediaAllNewsListItem"
-  // );
-  // new_plat();
-  // $("#mediaAllNewsMore").click(function() {
-  //   location.href = "./mediamore.html?id=new_all";
-  // });
-  // $("#mediaAllNews1More").click(function() {
-  //   location.href = "./mediamore.html?id=new_nndustry";
-  // });
-  // $("#mediaAllNews2More").click(function() {
-  //   location.href = "./mediamore.html?id=new_policy";
-  // });
-  // $("#mediaAllNews3More").click(function() {
-  //   location.href = "./mediamore.html?id=new_plat";
-  // });
+  msgReq(".mediaAllNewsBox", ".mediaAllNewsBox .items");
 });
 
 // 封装函数
@@ -55,23 +16,19 @@ var strs = function(data, id) {
   $.each(data, function(ind, item) {
     if (ind < 3) {
       str +=
-        `<div class="col-xs-4 col-sm-4 itemShows">
-        <div class="mediaAllNewsListItem">
-            <img class="fastPayImg1" src="//www.ifepay.com/website/media/` +
-        item[6] +
-        `" alt="">
-            <div class="fastPayTitle">` +
-        item[1] +
-        `</div><span class="fastPayContent">` +
-        item[2] +
-        `</span>
-       <div class="fastPayTime">` +
-        item[3] +
+        `<div class="col-xs-4 col-sm-4 col-md-4 ">
+      <div class="items">
+          <div class="mediaAllNewsTitle">` +
+        item.title +
         `</div>
-       <div class="fastPayTime ft1">来源：` +
-        item[5] +
-        `</div>  </div>
-        </div>`;
+          <img class="imgs" src="` +
+        item.cover_img +
+        `" alt="">
+          <div class="content">` +
+        item.introduction +
+        `</div>
+      </div>
+  </div>`;
     }
   });
   $(id).html(str);
@@ -81,24 +38,24 @@ var links = function(data, id) {
   let items1 = $(id);
   items1.each(function(index, el) {
     $(this).on("click", function() {
-      location.href = "./mediadetail.html?id=" + data[index][0];
+      window.open(data[index].url, "_blank");
+      // location.href = data[index].url;
     });
   });
 };
 
-// 获取新闻列表的函数;msgReq("http://192.168.1.28:8001/front/new_nndustry/","showData2", "#mediaAllNews1","#mediaAllNews1  .mediaAllNewsListItem");
-var msgReq = function(Url, cbs, id, idChild) {
-  var urls = "//www.ifepay.com/website/front/" + Url + "/?size=3";
+//
+var msgReq = function(id, idChild) {
+  var urls = "/yanghua_edu/api/learning_platform/learn_plat/";
   $.ajax({
     url: urls,
     type: "GET",
-    dataType: "jsonp", //指定服务器返回的数据类型
-    jsonp: "theFunction", //指定参数名称
-    jsonpCallback: cbs, //指定回调函数名称
+    dataType: "json", //指定服务器返回的数据类型
     success: function(res) {
-      // console.log(res);
-      strs(res.ret, id);
-      links(res.ret, idChild);
+      console.log("学习平台");
+      console.log(res);
+      strs(res.data.ret, id);
+      links(res.data.ret, idChild);
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
       console.log("请求数据异常，状态码：" + XMLHttpRequest.status);

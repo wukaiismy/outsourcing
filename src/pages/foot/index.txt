@@ -38,7 +38,7 @@
            <!--  <div class="clearfix visible-xs-block"></div> -->
             <div class="col-xs-4 col-sm-4 QrcodeS">
                 <div class="footWinxinTitle">官方微信</div>
-                <img class="qrcodeImg" src="./assets/img/logoFOOT.jpg" alt="">
+                 <img class="qrcodeImg" src="./assets/img/qrcode.png" alt="">
             </div>
         </div>
     </div>

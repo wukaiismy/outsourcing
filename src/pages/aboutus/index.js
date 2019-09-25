@@ -27,16 +27,16 @@ var strs = function(data, id) {
       str +=
         `<div class="itemBox">
         <div class="newDetailBoxTitle">` +
-        item[1] +
+        item.title +
         `</div>
         <div class="newDetailBoxTime">来源：` +
-        item[5] +
+        item.source_from +
         `&nbsp; &nbsp;发布时间：` +
-        item[3] +
+        item.create_time +
         `</div>
         <div class="newDetailGarid"></div>
         <div class="newDetailContent">` +
-        item[2] +
+        item.description +
         `</div>
         <div class="newDetailGarid1"></div>
     </div>`;
@@ -51,14 +51,20 @@ var links = function(data, id) {
   let items1 = $(id);
   items1.each(function(index, el) {
     $(this).on("click", function() {
-      location.href = "./mediadetail.html?id=" + data[index][0];
+      const a = document.createElement("a"); // 创建a标签
+      a.setAttribute("download", ""); // download属性
+      a.setAttribute(
+        "href",
+        "http://grs.syau.edu.cn/upload/2018/11/%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%BD%8D%E7%A0%94%E7%A9%B6%E7%94%9F%E5%9F%B9%E5%85%BB%E6%89%8B%E5%86%8C%EF%BC%882017%E7%89%88%EF%BC%89.doc"
+      ); // href链接
+      a.click(); // 自执行点击事件
     });
   });
 };
 var AjaxPaginator = function(res, obj, ids, page) {
   var options = {
     currentPage: page, //当前页
-    totalPages: res.num_pages, //总页数
+    totalPages: res.count, //总页数
     numberOfPages: 5, //设置控件显示的页码数
     bootstrapMajorVersion: 3, //如果是bootstrap3版本需要加此标识，并且设置包含分页内容的DOM元素为UL,如果是bootstrap2版本，则DOM包含元素是DIV
     useBootstrapTooltip: false, //是否显示tip提示框
@@ -96,66 +102,23 @@ var allReq = function(ids, page, size) {
   $("#tilePages").html(tiltw);
 
   // 静态
-  var res = {
-    num_pages: 4,
-    ret: [
-      [
-        1,
-        "标题1",
-        "我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容",
-        "2019-01-12",
-        "标题4",
-        "教育网"
-      ],
-      [
-        2,
-        "标题2",
-        "我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容",
-        "2019-01-12",
-        "标题4",
-        "教育网"
-      ],
-      [
-        3,
-        "标题3",
-        "我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容",
-        "2019-01-12",
-        "标题4",
-        "教育网"
-      ],
-      [
-        4,
-        "标题4",
-        "我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容",
-        "2019-01-12",
-        "标题4",
-        "教育网"
-      ]
-    ]
-  };
-  strs(res.ret, "#newDetailBoxs");
-  links(res.ret, "#newDetailBoxs  .itemBox");
-  AjaxPaginator(res, $(".pagination"), ids, page);
-  // 静态
 
   var new_nndustry =
-    "//www.ifepay.com/website/front/" + ids + "/?pg=" + page + "&size=" + size;
-  // $.ajax({
-  //   url: new_nndustry,
-  //   type: "GET",
-  //   dataType: "jsonp", //指定服务器返回的数据类型
-  //   jsonp: "theFunction", //指定参数名称
-  //   jsonpCallback: showData, //指定回调函数名称
-  //   success: function(res) {
-  //     // console.log(showData);
-  //     // console.log(res);
-  //     strs(res.ret, "#newDetailBoxs");
-  //     links(res.ret, "#newDetailBoxs  .itemBox");
-  //     //    设置分页
-  //     AjaxPaginator(res, $(".pagination"), ids, page);
-  //   },
-  //   error: function(XMLHttpRequest, textStatus, errorThrown) {
-  //     console.log("请求数据异常，状态码：" + XMLHttpRequest.status);
-  //   }
-  // });
+    "/yanghua_edu/api/other_module/document_file/?pg=" + page + "&size=" + size;
+  $.ajax({
+    url: new_nndustry,
+    type: "GET",
+    dataType: "json", //指定服务器返回的数据类型
+    success: function(res) {
+      console.log("资料下载");
+      console.log(res);
+      strs(res.data.ret, "#newDetailBoxs");
+      links(res.data.ret, "#newDetailBoxs  .itemBox");
+      //    设置分页
+      AjaxPaginator(res.data, $(".pagination"), ids, page);
+    },
+    error: function(XMLHttpRequest, textStatus, errorThrown) {
+      console.log("请求数据异常，状态码：" + XMLHttpRequest.status);
+    }
+  });
 };

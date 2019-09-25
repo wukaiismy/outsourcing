@@ -26,6 +26,7 @@ $(function() {
       console.log(res);
       if (res.code == 1) {
         strCenter(res.data.ret);
+        links(res.data.ret, ".productCenterList .fastPay");
       }
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -55,4 +56,14 @@ var strCenter = function(data) {
   </div>`;
   });
   $(".productCenterList").html(str);
+};
+
+// 跳转详情页面
+var links = function(data, id) {
+  let items1 = $(id);
+  items1.each(function(index, el) {
+    $(this).on("click", function() {
+      location.href = "./mediadetail.html?urls=product&&id=" + data[index].id;
+    });
+  });
 };
