@@ -1,7 +1,7 @@
 <footer class="footBox">
     <div class="container">
         <div class="row">
-            <div class="col-xs-4 col-sm-4">
+            <div class="col-xs-4 col-sm-4 myBotton">
                 /*<img class="footLogo" src="" alt="">*/
                 <div class="giass"></div>
                 <div class="footTel">服务热线：028-86155671</div>

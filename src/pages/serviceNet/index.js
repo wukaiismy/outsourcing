@@ -10,7 +10,7 @@ $(function() {
   $("#footHtml").html(footer);
   $(".navItem").removeClass("selected");
   $(".n6").addClass("selected");
-
+  aboutUs();
   // 获取服务点列表
   var UrlBanner = "/yanghua_edu/api/service_point/service_point/";
   $.ajax({
@@ -31,7 +31,29 @@ $(function() {
     }
   });
 });
-
+// 关于我们
+var aboutUs = function() {
+  var UrlBanner = "/yanghua_edu/api/other_module/company_profile/";
+  $.ajax({
+    url: UrlBanner,
+    type: "GET",
+    dataType: "json", //指定服务器返回的数据类型
+    // jsonp: "theFunction", //指定参数名称
+    // jsonpCallback: "showData", //指定回调函数名称
+    success: function(res) {
+      console.log("关于我们");
+      console.log(res);
+      if (res.code == 1) {
+        $(".main-title").html(res.data.main_title);
+        $(".subtitle").html(res.data.subtitle);
+        $(".aboutUsContents").html(res.data.content);
+      }
+    },
+    error: function(XMLHttpRequest, textStatus, errorThrown) {
+      console.log("请求数据异常，状态码：" + XMLHttpRequest.status);
+    }
+  });
+};
 // 服务站点列表
 var serviceNet = function(data) {
   var str = "";
