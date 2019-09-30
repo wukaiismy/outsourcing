@@ -62,9 +62,10 @@ var links = function(data, id) {
   });
 };
 var AjaxPaginator = function(res, obj, ids, page) {
+  var total = res.count / page;
   var options = {
     currentPage: page, //当前页
-    totalPages: res.count, //总页数
+    totalPages: 1, //总页数
     numberOfPages: 5, //设置控件显示的页码数
     bootstrapMajorVersion: 3, //如果是bootstrap3版本需要加此标识，并且设置包含分页内容的DOM元素为UL,如果是bootstrap2版本，则DOM包含元素是DIV
     useBootstrapTooltip: false, //是否显示tip提示框

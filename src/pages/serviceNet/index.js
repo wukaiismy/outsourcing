@@ -56,7 +56,7 @@ var serviceNet = function(data) {
       </div>
       <div class="contactUsDetail1 De3">
         客服邮箱：<span>` +
-      (item.email ? item.email : "-") +
+      (item.postal_no ? item.postal_no : "-") +
       `</span>
       </div>
       <div class="contactUsDetail1 De4">

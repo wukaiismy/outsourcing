@@ -107,32 +107,40 @@
                 aria-describedby="basic-addon1" />
             </div>
             <div class="msgItem">
-              <span class="msgItemTitle">报考类型：</span>
+              <span class="msgItemTitle t1">&nbsp;* 身份证：</span>
+              <input type="number" id="id_card_number" name="id_card_number" class="form-control msgItemIpt"
+                placeholder="请输入身份证" aria-describedby="basic-addon1" />
+            </div>
+            <div class="msgItem">
+              <span class="msgItemTitle">&nbsp;您的性别：</span>
               <div class="form-group">
-                <select id="service_content_id" name="service_content_id" class="selectpicker show-tick msgItemIpt ms"
-                  title="请选择申请类型" data-live-search="true" data-size="5">
-                  <option disabled>请选择报考类型</option>
-                  <option>小学</option>
-                  <option>初中</option>
-                  <option>高中</option>
-                  <option>中专</option>
-                  <option>大专</option>
-                  <option>大学</option>
-                  <option>研究生</option>
+                <select id="sex" name="sex" class="selectpicker show-tick msgItemIpt ms" title="请选择申请类型"
+                  data-live-search="true" data-size="5">
+                  <option disabled>请选择性别</option>
+                  <option value="1" label="男">男</option>
+                  <option value="2" label="女">女</option>
                 </select>
               </div>
             </div>
             <div class="msgItem">
-              <span class="msgItemTitle">您的学历：</span>
-              <!-- <input type="text" id="types_of" name="types_of" hidden> -->
-              <div class="form-group">
-                <select id="education" name="education" class="selectpicker show-tick msgItemIpt ms" title="请选择您的学历"
-                  data-live-search="true" data-size="5">
-                  <option disabled>请选择您的学历</option>
-                  <option value="1" label="高中">高中</option>
-                  <option value="2" label="大学">大学</option>
-                </select>
-              </div>
+              <span class="msgItemTitle t1">&nbsp;&nbsp;* QQ号：</span>
+              <input type="number" id="qq_number" name="qq_number" class="form-control msgItemIpt" placeholder="请输入QQ号"
+                aria-describedby="basic-addon1" />
+            </div>
+            <div class="msgItem">
+              <span class="msgItemTitle t1">现读院校：</span>
+              <input type="text" id="current_institution" name="current_institution" class="form-control msgItemIpt"
+                placeholder="请输入" aria-describedby="basic-addon1" />
+            </div>
+            <div class="msgItem">
+              <span class="msgItemTitle t1">需报院校：</span>
+              <input id="need_report_colleges" name="need_report_colleges" class="form-control msgItemIpt"
+                placeholder="请输入" aria-describedby="basic-addon1" />
+            </div>
+            <div class="msgItem">
+              <span class="msgItemTitle t1">需报专业：</span>
+              <input id="need_report_professional" name="need_report_professional" class="form-control msgItemIpt"
+                placeholder="请输入" aria-describedby="basic-addon1" />
             </div>
             <div class="msgItem">
               <span class="msgItemTitle">备注说明：</span>

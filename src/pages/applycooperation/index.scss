@@ -35,7 +35,7 @@
 
     .msgBigBox {
         width: 524px;
-        height: 497px;
+        // height: 497px;
         margin: 10px auto;
         background: #FFFFFF;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
@@ -43,7 +43,7 @@
         position: relative;
         text-align: center;
         top: -193px;
-        padding: 40px 10px 0px 60px
+        padding: 40px 10px 40px 60px
     }
 
     .msgItem {
@@ -68,7 +68,7 @@
         }
 
         .msgItemIpt {
-            width: 320px;
+            width: 280px;
             height: 30px;
             display: inline-block
         }
