@@ -59,7 +59,9 @@ var serviceNet = function(data) {
   var str = "";
   $.each(data, function(index, item) {
     str +=
-      ` <div class="contactUsTitle">
+      ` <div class="contactUsTitle"><img class="picLogo" src="` +
+      item.address_map +
+      `" alt="">
       <div class="contactUsDetail1">
         公司名称：<span>` +
       item.name +
@@ -96,11 +98,6 @@ var serviceNet = function(data) {
       item.support_hotline +
       `</span>
       </div>
-    </div>
-    <div class="picLogobOX">
-      <img class="picLogo" src="` +
-      item.address_map +
-      `" alt="">
     </div>`;
   });
   $(".serviceBox").html(str);

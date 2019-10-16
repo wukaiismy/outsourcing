@@ -147,9 +147,10 @@ var strs = function(data, id) {
         <div class="title">` +
       item.title +
       `</div>
-        <div class="content">` +
+      <div class="ellipsis">
+        <div class="">` +
       item.content +
-      `</div>
+      `</div><span class="ellipsis-after"> ... </span></div> 
       </div>
     </div>
     <div class="garid"></div>`;
@@ -241,9 +242,10 @@ var tebleShow = function(data, id) {
       <div class="title">` +
         item.title +
         `</div>
-      <div class="content">` +
+        <div class="ellipsis">
+      <div class="">` +
         item.content +
-        `</div>
+        `</div><span class="ellipsis-after"> ... </span></div> 
     </div>
   </div>
   <div class="garids"></div>`;

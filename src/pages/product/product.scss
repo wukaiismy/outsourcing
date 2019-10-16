@@ -201,7 +201,7 @@ ul .navItem {
 
 .bankList {
 	width: 100%;
-	height: 400px;
+	min-height: 400px;
 	background: #D0DDF5;
 	text-align: center;
 
@@ -211,6 +211,12 @@ ul .navItem {
 
 	.fastPayImg {
 		height: 60px;
+	}
+
+	.shows {
+		padding: 10px;
+		border: 1px solid #ccc;
+		margin-bottom: 32px;
 	}
 
 	.bankItem {
