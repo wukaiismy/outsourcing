@@ -436,3 +436,14 @@ ul .navItem {
 	color: #1C3672;
 	cursor: pointer;
 }
+
+.dowebok {
+	width: 100%;
+	height: 25px;
+	border: 1px solid red;
+	overflow: hidden;
+
+	a {
+		display: block;
+	}
+}
