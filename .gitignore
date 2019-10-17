@@ -3,6 +3,7 @@ node_modules/
 md/
 npm-debug.log*
 dist
+.history
 # Editor directories and files
 .idea
 .vscode

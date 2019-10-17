@@ -120,7 +120,7 @@ ul .navItem {
 
 #lunBo img {
   width: 100%;
-  max-height: 480px;
+  height: 480px;
 }
 
 .rightNav table {
@@ -180,8 +180,11 @@ ul .navItem {
   .fastPayLiftContent {
     font-size: 14px;
     color: #8f8f8f;
-    line-height: 22px;
+    // line-height: 22px;
     margin-top: 6px;
+    height: 180px;
+    overflow: hidden;
+    // background-color: palegoldenrod
   }
 }
 
@@ -247,7 +250,7 @@ ul .navItem {
         /***** 跟ellipsis height 一样 *****/
       }
 
-      .ellipsis>*:first-child {
+      .ellipsis > *:first-child {
         float: right;
         width: 100%;
         margin-left: -30px;
@@ -270,28 +273,38 @@ ul .navItem {
         text-align: right;
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAABCAMAAACfZeZEAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDWRdwAAAP90Uk5TgsRjMZXhS30YrvDUP3Emow1YibnM9+ggOZxrBtpRRo94gxItwLOoX/vsHdA2yGgL8+TdKUK8VFufmHSGgAQWJNc9tk+rb5KMCA8aM0iwpWV6dwP9+fXuFerm3yMs0jDOysY8wr5FTldeoWKabgEJ8RATG+IeIdsn2NUqLjQ3OgBDumC3SbRMsVKsValZplydZpZpbJOQco2KdYeEe36BDAL8/vgHBfr2CvTyDu8R7esU6RcZ5ecc4+Af3iLcJSjZ1ivT0S/PMs3LNck4x8U7wz7Bv0G9RLtHuEq1TbJQr1OtVqqnWqRdoqBhnmSbZ5mXapRtcJGOc4t2eYiFfH9AS7qYlgAAARlJREFUKM9jqK9fEGS7VNrDI2+F/nyB1Z4Fa5UKN4TbbeLY7FW0Tatkp3jp7mj7vXzl+4yrDsYoVx+JYz7mXXNSp/a0RN25JMcLPP8umzRcTZW77tNyk63tdprzXdmO+2ZdD9MFe56Y9z3LUG96mcX02n/CW71JH6Qmf8px/cw77ZvVzB+BCj8D5vxhn/vXZh6D4uzf1rN+Cc347j79q/zUL25TPrJMfG/5LvuNZP8rixeZz/mf+vU+Vut+5NL5gPOeb/sd1dZbTs03hBuvmV5JuaRyMfk849nEM7qnEk6IHI8/qn049hB35QGHiv0yZXuMdkXtYC3ebrglcqvYxoj1muvC1nDlrzJYGbpcdHHIMo2FwYv+j3QAAOBSfkZYITwUAAAAAElFTkSuQmCC);
 
-        background: -webkit-gradient(linear,
-            left top,
-            right top,
-            from(rgba(255, 255, 255, 0)),
-            to(white),
-            color-stop(50%, white));
-        background: -moz-linear-gradient(to right,
-            rgba(255, 255, 255, 0),
-            white 50%,
-            white);
-        background: -o-linear-gradient(to right,
-            rgba(255, 255, 255, 0),
-            white 50%,
-            white);
-        background: -ms-linear-gradient(to right,
-            rgba(255, 255, 255, 0),
-            white 50%,
-            white);
-        background: linear-gradient(to right,
-            rgba(255, 255, 255, 0),
-            white 50%,
-            white);
+        background: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(rgba(255, 255, 255, 0)),
+          to(white),
+          color-stop(50%, white)
+        );
+        background: -moz-linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0),
+          white 50%,
+          white
+        );
+        background: -o-linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0),
+          white 50%,
+          white
+        );
+        background: -ms-linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0),
+          white 50%,
+          white
+        );
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0),
+          white 50%,
+          white
+        );
       }
     }
   }
@@ -402,7 +415,7 @@ ul .navItem {
         /***** 跟ellipsis height 一样 *****/
       }
 
-      .ellipsis>*:first-child {
+      .ellipsis > *:first-child {
         float: right;
         width: 100%;
         margin-left: -30px;
@@ -427,28 +440,38 @@ ul .navItem {
         text-align: right;
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAABCAMAAACfZeZEAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDWRdwAAAP90Uk5TgsRjMZXhS30YrvDUP3Emow1YibnM9+ggOZxrBtpRRo94gxItwLOoX/vsHdA2yGgL8+TdKUK8VFufmHSGgAQWJNc9tk+rb5KMCA8aM0iwpWV6dwP9+fXuFerm3yMs0jDOysY8wr5FTldeoWKabgEJ8RATG+IeIdsn2NUqLjQ3OgBDumC3SbRMsVKsValZplydZpZpbJOQco2KdYeEe36BDAL8/vgHBfr2CvTyDu8R7esU6RcZ5ecc4+Af3iLcJSjZ1ivT0S/PMs3LNck4x8U7wz7Bv0G9RLtHuEq1TbJQr1OtVqqnWqRdoqBhnmSbZ5mXapRtcJGOc4t2eYiFfH9AS7qYlgAAARlJREFUKM9jqK9fEGS7VNrDI2+F/nyB1Z4Fa5UKN4TbbeLY7FW0Tatkp3jp7mj7vXzl+4yrDsYoVx+JYz7mXXNSp/a0RN25JMcLPP8umzRcTZW77tNyk63tdprzXdmO+2ZdD9MFe56Y9z3LUG96mcX02n/CW71JH6Qmf8px/cw77ZvVzB+BCj8D5vxhn/vXZh6D4uzf1rN+Cc347j79q/zUL25TPrJMfG/5LvuNZP8rixeZz/mf+vU+Vut+5NL5gPOeb/sd1dZbTs03hBuvmV5JuaRyMfk849nEM7qnEk6IHI8/qn049hB35QGHiv0yZXuMdkXtYC3ebrglcqvYxoj1muvC1nDlrzJYGbpcdHHIMo2FwYv+j3QAAOBSfkZYITwUAAAAAElFTkSuQmCC);
 
-        background: -webkit-gradient(linear,
-            left top,
-            right top,
-            from(rgba(255, 255, 255, 0)),
-            to(white),
-            color-stop(50%, white));
-        background: -moz-linear-gradient(to right,
-            rgba(255, 255, 255, 0),
-            white 50%,
-            white);
-        background: -o-linear-gradient(to right,
-            rgba(255, 255, 255, 0),
-            white 50%,
-            white);
-        background: -ms-linear-gradient(to right,
-            rgba(255, 255, 255, 0),
-            white 50%,
-            white);
-        background: linear-gradient(to right,
-            rgba(255, 255, 255, 0),
-            white 50%,
-            white);
+        background: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(rgba(255, 255, 255, 0)),
+          to(white),
+          color-stop(50%, white)
+        );
+        background: -moz-linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0),
+          white 50%,
+          white
+        );
+        background: -o-linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0),
+          white 50%,
+          white
+        );
+        background: -ms-linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0),
+          white 50%,
+          white
+        );
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0),
+          white 50%,
+          white
+        );
       }
     }
 
@@ -501,11 +524,11 @@ ul .navItem {
 .publsa {
   // background-color: palegoldenrod;
   height: 46px;
-  border: .5px solid #ccc;
+  border: 0.5px solid #ccc;
   border-top: none;
   line-height: 46px;
   font-size: 18px;
-  color: #333333
+  color: #333333;
 }
 
 .msgItem {
@@ -559,4 +582,31 @@ ul .navItem {
   font-size: 18px;
   color: #1c3672;
   cursor: pointer;
+}
+.dddd {
+  width: 100%;
+  height: 46px;
+  border: 0.5px solid #ccc;
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  line-height: 46px;
+}
+.dowebok {
+  width: 100%;
+  height: 194px;
+  border: 0.5px solid #ccc;
+  overflow: hidden;
+
+  a {
+    display: block;
+    font-size: 18px;
+    // margin: 10px auto;
+    line-height: 22px;
+    color: #333;
+    padding: 5px;
+  }
+  a:hover {
+    color: #333;
+  }
 }

@@ -5,6 +5,8 @@ import "../common/index.js";
 // import { api } from "../../config/httpUrl";
 import "bootstrap/dist/css/bootstrap-theme.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import "../../assets/js/jquery.liMarquee";
+// import '../../assets/js/jquery-1.8.3.min';
 $(function() {
   /*
    * 引入公共文件
@@ -255,4 +257,40 @@ var tebleShow = function(data, id) {
 
   // 跳转到详情
   links(data, "#choosed .title");
+
+  // 通知公告
+  var UrlBanner = "/yanghua_edu/api/other_module/notic_manage/";
+  // 获取初始化数据
+  $.ajax({
+    url: UrlBanner,
+    type: "GET",
+    dataType: "json", //指定服务器返回的数据类型
+    success: function(res) {
+      console.log("通知公告");
+      console.log(res);
+
+      var lis = "";
+
+      if (res.code == 1) {
+        var dataList = res.data.ret;
+      }
+      $.each(dataList, function(ind, item) {
+        lis +=
+          `<a href="javascript:">` +
+          (item.type_of == 1 ? "通知：" : "公告：") +
+          item.content +
+          `</a>`;
+      });
+      $(".dowebok").html(lis);
+      $(".dowebok").liMarquee({
+        direction: "up",
+        scrollamount: 5,
+        runshort: false,
+        hoverstop: false
+      });
+    },
+    error: function(XMLHttpRequest, textStatus, errorThrown) {
+      console.log("请求数据异常，状态码：" + XMLHttpRequest.status);
+    }
+  });
 };
