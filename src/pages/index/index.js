@@ -286,6 +286,7 @@ var tebleShow = function(data, id) {
         direction: "up",
         scrollamount: 5,
         runshort: false,
+        // runshort: false,
         hoverstop: false
       });
     },
