@@ -283,7 +283,8 @@ var tebleShow = function(data, id) {
       $('.dowebok').liMarquee({
         direction: 'up',
         scrollamount: 5,
-        runshort: false
+        // runshort: false,
+        hoverstop: false
       });
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
