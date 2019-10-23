@@ -1,203 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../../images/new/logo.jpg" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="shortcut icon" href="../../images/new/logo.jpg" />
+    <link rel="stylesheet" href="../../assets/css/liMarquee.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=0.2, maximum-scale=2.0, user-scalable=yes"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <link rel="stylesheet" href="../../assets/css/liMarquee.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=0.2, maximum-scale=2.0, user-scalable=yes" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>杨华教育-首页</title>
+  </head>
 
-  <title>杨华教育-首页</title>
-</head>
+  <body>
+    <div id="headerHtml"></div>
 
-<body>
-  <div id="headerHtml"></div>
-
-  <!-- 轮播图 -->
-  <div class="container containerNav">
-    <div id="carouselMenu" class="carousel slide">
-      <ol class="carousel-indicators" id="numbers"></ol>
-      <div class="carousel-inner" id="lunBo"></div>
-    </div>
-    <div class="rightNav">
-      <table width="325" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td width="108" id="product" data-toggle="modal" data-target="#myModal">
-            <img class="tipImg" src="../../images/new/renyuanbaoming.png" alt="在线报名" />
-            <div>在线报名</div>
-          </td>
-          <td width="109" id="serach">
-            <img class="tipImg" src="../../images/new/dizhi.png" alt="网点查询" />
-            <div>网点查询</div>
-          </td>
-          <td width="108" id="applycooperation">
-            <img class="tipImg" src="../../images/new/pinpaijiameng.png" alt="合作加盟" />
-            <div>合作加盟</div>
-          </td>
-        </tr>
-        <tr>
-          <td width="108" id="product1" data-toggle="modal" data-target="#myModal">
-            <img class="tipImg" src="../../images/new/dayin.png" alt="在线报名" />
-            <div>准考证打印</div>
-          </td>
-          <td width="109" id="serach1">
-            <img class="tipImg" src="../../images/new/chaxun.png" alt="网点查询" />
-            <div>自考成绩查询</div>
-          </td>
-          <td width="108" id="applycooperation1">
-            <img class="tipImg" src="../../images/new/search.png" alt="合作加盟" />
-            <div>自考信息查询</div>
-          </td>
-        </tr>
-      </table>
-      <div class="dddd">通知-公告</div>
-      <div class="dowebok">
+    <!-- 轮播图 -->
+    <div class="container containerNav">
+      <div id="carouselMenu" class="carousel slide">
+        <ol class="carousel-indicators" id="numbers"></ol>
+        <div class="carousel-inner" id="lunBo"></div>
       </div>
+      <div class="rightNav">
+        <table width="325" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td
+              width="108"
+              id="product"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              <img
+                class="tipImg"
+                src="../../images/new/renyuanbaoming.png"
+                alt="在线报名"
+              />
+              <div>在线报名</div>
+            </td>
+            <td width="109" id="serach">
+              <img
+                class="tipImg"
+                src="../../images/new/dizhi.png"
+                alt="网点查询"
+              />
+              <div>网点查询</div>
+            </td>
+            <td width="108" id="applycooperation">
+              <img
+                class="tipImg"
+                src="../../images/new/pinpaijiameng.png"
+                alt="合作加盟"
+              />
+              <div>合作加盟</div>
+            </td>
+          </tr>
+          <tr>
+            <td
+              width="108"
+              id="product1"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              <img
+                class="tipImg"
+                src="../../images/new/dayin.png"
+                alt="在线报名"
+              />
+              <div>准考证打印</div>
+            </td>
+            <td width="109" id="serach1">
+              <img
+                class="tipImg"
+                src="../../images/new/chaxun.png"
+                alt="网点查询"
+              />
+              <div>自考成绩查询</div>
+            </td>
+            <td width="108" id="applycooperation1">
+              <img
+                class="tipImg"
+                src="../../images/new/search.png"
+                alt="合作加盟"
+              />
+              <div>自考信息查询</div>
+            </td>
+          </tr>
+        </table>
 
+        <div class="dddd">通知-公告</div>
+        <div class="dowebok"></div>
+      </div>
     </div>
-  </div>
-  <div class="Graid"></div>
-  <!-- 行业动态 -->
-  <div class="container">
-    <h2 class="scoendTitle">行业动态</h2>
-    <div class="hangYeTitles row">
-      <div class="col-xs-4 col-sm-4 col-md-4 ltemss">
-        <div class="fastPayLift">
-          <img class="fastPayImg" alt="" />
-          <div class="fastPayLiftTitle"></div>
-          <div class="fastPayLiftContent"></div>
+    <div class="Graid"></div>
+    <!-- 行业动态 -->
+    <div class="container">
+      <h2 class="scoendTitle">行业动态</h2>
+      <div class="hangYeTitles row">
+        <div class="col-xs-4 col-sm-4 col-md-4 ltemss">
+          <div class="fastPayLift">
+            <img class="fastPayImg" alt="" />
+            <div class="fastPayLiftTitle"></div>
+            <div class="fastPayLiftContent"></div>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 ltemss">
+          <div class="fastPayCenter" id="fastPayCenter"></div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <img class="img-circleS" src="" alt="" />
         </div>
       </div>
-      <div class="col-xs-4 col-sm-4 col-md-4 ltemss">
-        <div class="fastPayCenter" id="fastPayCenter"></div>
-      </div>
-      <div class="col-xs-4 col-sm-4 col-md-4">
-        <img class="img-circleS" src="" alt="" />
-      </div>
     </div>
-  </div>
-  <div class="container serportBox">
-    <div class="titles">专业培训 此刻启程</div>
-    <div class="teow">（伴千万孩子共同成长）</div>
-    <div class="lastTile">—　天生为名校　—</div>
-  </div>
-  <div class="container teacherBox">
-    <h2 class="scoendTitle">你需要了解的教育动态</h2>
-    <div class="row bigBox">
-      <div class="col-xs-7 col-sm-7 col-md-7">
-        <div class="navTitles">
-          <div class="navTitlesItem navTitlesItemHover">考试攻略</div>
-          <div class="navTitlesItem">专业指导</div>
-          <div class="navTitlesItem">报考指南</div>
+    <div class="container serportBox">
+      <div class="titles">专业培训 此刻启程</div>
+      <div class="teow">（伴千万孩子共同成长）</div>
+      <div class="lastTile">—　天生为名校　—</div>
+    </div>
+    <div class="container teacherBox">
+      <h2 class="scoendTitle">你需要了解的教育动态</h2>
+      <div class="row bigBox">
+        <div class="col-xs-7 col-sm-7 col-md-7">
+          <div class="navTitles">
+            <div class="navTitlesItem navTitlesItemHover">考试攻略</div>
+            <div class="navTitlesItem">专业指导</div>
+            <div class="navTitlesItem">报考指南</div>
+          </div>
+          <div id="choosed"></div>
         </div>
-        <div id="choosed"></div>
-      </div>
-      <div class="col-xs-5 col-sm-5 col-md-5">
-        <img class="img12" src="" alt="" />
-        <img class="img12" src="" alt="" />
+        <div class="col-xs-5 col-sm-5 col-md-5">
+          <img class="img12 img1" src="" alt="" />
+          <img class="img12 img2" src="" alt="" />
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Modal -->
-  <div class="modal fade models" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title" id="myModalLabel">在线报名</h4>
-        </div>
-        <div class="modal-body">
-          <form action="" method="post">
-            <div class="msgItem">
-              <span class="msgItemTitle t1">&nbsp;&nbsp;&nbsp;&nbsp;* 姓名：</span>
-              <input type="text" id="name" name="name" class="form-control msgItemIpt" placeholder="请输入联系人"
-                aria-describedby="basic-addon1" />
-            </div>
-            <div class="msgItem">
-              <span class="msgItemTitle t1">&nbsp;&nbsp;&nbsp;&nbsp;* 电话：</span>
-              <input type="number" id="mobile" name="mobile" class="form-control msgItemIpt" placeholder="请输入联系电话"
-                aria-describedby="basic-addon1" />
-            </div>
-            <div class="msgItem">
-              <span class="msgItemTitle t1">&nbsp;* 身份证：</span>
-              <input type="number" id="id_card_number" name="id_card_number" class="form-control msgItemIpt"
-                placeholder="请输入身份证" aria-describedby="basic-addon1" />
-            </div>
-            <div class="msgItem">
-              <span class="msgItemTitle">&nbsp;您的性别：</span>
-              <div class="form-group">
-                <select id="sex" name="sex" class="selectpicker show-tick msgItemIpt ms" title="请选择申请类型"
-                  data-live-search="true" data-size="5">
-                  <option disabled>请选择性别</option>
-                  <option value="1" label="男">男</option>
-                  <option value="2" label="女">女</option>
-                </select>
+    <!-- Modal -->
+    <div
+      class="modal fade models"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">在线报名</h4>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post">
+              <div class="msgItem">
+                <span class="msgItemTitle t1"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;* 姓名：</span
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control msgItemIpt"
+                  placeholder="请输入联系人"
+                  aria-describedby="basic-addon1"
+                />
               </div>
-            </div>
-            <div class="msgItem">
-              <span class="msgItemTitle t1">&nbsp;&nbsp;* QQ号：</span>
-              <input type="number" id="qq_number" name="qq_number" class="form-control msgItemIpt" placeholder="请输入QQ号"
-                aria-describedby="basic-addon1" />
-            </div>
-            <div class="msgItem">
-              <span class="msgItemTitle t1">现读院校：</span>
-              <input type="text" id="current_institution" name="current_institution" class="form-control msgItemIpt"
-                placeholder="请输入" aria-describedby="basic-addon1" />
-            </div>
-            <div class="msgItem">
-              <span class="msgItemTitle t1">需报院校：</span>
-              <input id="need_report_colleges" name="need_report_colleges" class="form-control msgItemIpt"
-                placeholder="请输入" aria-describedby="basic-addon1" />
-            </div>
-            <div class="msgItem">
-              <span class="msgItemTitle t1">需报专业：</span>
-              <input id="need_report_professional" name="need_report_professional" class="form-control msgItemIpt"
-                placeholder="请输入" aria-describedby="basic-addon1" />
-            </div>
-            <div class="msgItem">
-              <span class="msgItemTitle">备注说明：</span>
-              <input type="text" id="description" name="description" class="form-control msgItemIpt" placeholder="备注"
-                aria-describedby="basic-addon1" />
-            </div>
-            <div class="msgItemShows">＊内容为必填项</div>
-            <div class="submit" data-toggle="modal" data-target="#myModal1">提交</div>
-          </form>
-        </div>
-        <!-- <div class="modal-footer">
+              <div class="msgItem">
+                <span class="msgItemTitle t1"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;* 电话：</span
+                >
+                <input
+                  type="number"
+                  id="mobile"
+                  name="mobile"
+                  class="form-control msgItemIpt"
+                  placeholder="请输入联系电话"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="msgItem">
+                <span class="msgItemTitle t1">&nbsp;* 身份证：</span>
+                <input
+                  type="number"
+                  id="id_card_number"
+                  name="id_card_number"
+                  class="form-control msgItemIpt"
+                  placeholder="请输入身份证"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="msgItem">
+                <span class="msgItemTitle">&nbsp;您的性别：</span>
+                <div class="form-group">
+                  <select
+                    id="sex"
+                    name="sex"
+                    class="selectpicker show-tick msgItemIpt ms"
+                    title="请选择申请类型"
+                    data-live-search="true"
+                    data-size="5"
+                  >
+                    <option disabled>请选择性别</option>
+                    <option value="1" label="男">男</option>
+                    <option value="2" label="女">女</option>
+                  </select>
+                </div>
+              </div>
+              <div class="msgItem">
+                <span class="msgItemTitle t1">&nbsp;&nbsp;* QQ号：</span>
+                <input
+                  type="number"
+                  id="qq_number"
+                  name="qq_number"
+                  class="form-control msgItemIpt"
+                  placeholder="请输入QQ号"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="msgItem">
+                <span class="msgItemTitle t1">现读院校：</span>
+                <input
+                  type="text"
+                  id="current_institution"
+                  name="current_institution"
+                  class="form-control msgItemIpt"
+                  placeholder="请输入"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="msgItem">
+                <span class="msgItemTitle t1">需报院校：</span>
+                <input
+                  id="need_report_colleges"
+                  name="need_report_colleges"
+                  class="form-control msgItemIpt"
+                  placeholder="请输入"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="msgItem">
+                <span class="msgItemTitle t1">需报专业：</span>
+                <input
+                  id="need_report_professional"
+                  name="need_report_professional"
+                  class="form-control msgItemIpt"
+                  placeholder="请输入"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="msgItem">
+                <span class="msgItemTitle">备注说明：</span>
+                <input
+                  type="text"
+                  id="description"
+                  name="description"
+                  class="form-control msgItemIpt"
+                  placeholder="备注"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="msgItemShows">＊内容为必填项</div>
+              <div class="submit" data-toggle="modal" data-target="#myModal1">
+                提交
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
         
         </div> -->
-      </div>
-    </div>
-  </div>
-  <!-- Modal -->
-  <div class="modal fade models1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-              aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel1">消息提示</h4>
-        </div>
-        <div class="modal-body1">
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
-          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
-  </div>
-  <div id="footHtml"></div>
-</body>
-
+    <!-- Modal -->
+    <div
+      class="modal fade models1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel1"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel1">消息提示</h4>
+          </div>
+          <div class="modal-body1"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              确认
+            </button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footHtml"></div>
+  </body>
 </html>

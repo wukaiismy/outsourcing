@@ -111,7 +111,7 @@ $(function() {
   // 获取中右图片
   getImage("center-right", [".img-circleS"]);
   // 获取底部图片
-  getImage("right-bottom", [".img12"]);
+  getImage("right-bottom", [".img1",".img2"]);
 
   const dataListArr = [[], [], []];
   // 行业动态
@@ -216,7 +216,7 @@ var getImage = function(url, imgClass) {
     dataType: "json", //指定服务器返回的数据类型
     success: function(res) {
       if (res.code == 1) {
-        // console.log(res);
+        console.log(res);
         if (res.data.ret) {
           $.each(res.data.ret, function(ind, item) {
             $(imgClass[ind]).attr("src", item.image);
