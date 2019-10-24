@@ -38,7 +38,7 @@ $(function() {
       var str1 = "";
       str1 +=
         `发布人：` +
-        (res.data.author ? res.data.author : "扬华教育") +
+        (res.data.author ? res.data.author : "世纪扬华教育") +
         ` &nbsp; &nbsp; &nbsp;发布时间：` +
         res.data.create_time +
         ` &nbsp; &nbsp; &nbsp;来源：` +

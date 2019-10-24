@@ -42,6 +42,6 @@
         </div>
     </div>
     <div class="footButton">
-        Copyright © 2019 扬华教育有限公司 All Rights Reserved -蜀ICP备18037181号
+        Copyright © 2019 四川省世纪扬华教育研究有限公司 All Rights Reserved -蜀ICP备19033495号
     </div>
 </footer>
