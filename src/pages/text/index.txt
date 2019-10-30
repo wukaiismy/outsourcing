@@ -7,7 +7,7 @@
             <ul class="navRight">
                 <li class="navItem  selected n1"><a href="./index.html">首页</a> </li>
                 <li class="navItem n2"><a href="./product.html">我要报考</a></li>
-                <li class="navItem n3"><a href="./business.html">服务大厅</a></li>
+               
                 <li class="navItem n4"><a href="./aboutus.html">资料中心</a></li>
                 <li class="navItem n5"><a href="./mediashow.html">学习平台</a></li>
                 <li class="navItem n6"><a href="./serviceNet.html">服务网点</a></li>

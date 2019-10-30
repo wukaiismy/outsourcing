@@ -319,7 +319,7 @@ ul .navItem {
 
     // margin-top: 10px;
     position: relative;
-    top: -50px;
+    top: 50px;
 
     .footAbout {
       font-size: 14px;
@@ -346,16 +346,16 @@ ul .navItem {
 
     .footWinxinTitle {
       text-align: center;
-      font-size: 20px;
+      font-size: 14px;
       color: #ffffff;
       height: 30px;
       line-height: 30px;
-      margin-top: 20px;
+      margin-top: 0px;
     }
 
     .qrcodeImg {
       width: 110px;
-      margin: 20px auto;
+      margin: 50px auto 10px;
     }
   }
 

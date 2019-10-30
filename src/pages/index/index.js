@@ -111,7 +111,7 @@ $(function() {
   // 获取中右图片
   getImage("center-right", [".img-circleS"]);
   // 获取底部图片
-  getImage("right-bottom", [".img1",".img2"]);
+  getImage("right-bottom", [".img1", ".img2"]);
 
   const dataListArr = [[], [], []];
   // 行业动态
@@ -139,6 +139,7 @@ $(function() {
 // 封装函数
 var strs = function(data, id) {
   var str = "";
+
   $.each(data, function(ind, item) {
     str +=
       `<div class="item"><div class="logoiMGBox">
@@ -157,6 +158,7 @@ var strs = function(data, id) {
     </div>
     <div class="garid"></div>`;
   });
+
   $(id).html(str);
 };
 // 跳转详情页面
@@ -181,8 +183,13 @@ var msgReq = function(id, dataListArr) {
         console.log("行业动态");
         console.log(res);
         var leftNav = res.data.ret[0];
+        console.log(leftNav.id);
+
         $(".fastPayLiftTitle").html(leftNav.title);
         $(".fastPayLiftContent").html(leftNav.content);
+        $(".fastPayLiftTitle").on("click", function() {
+          location.href = "./mediadetail.html?urls=index&&id=" + leftNav.id;
+        });
         // 中间列表项
         var contents = res.data.ret.slice(1, 5);
 

@@ -175,6 +175,7 @@ ul .navItem {
     font-family: 微软雅黑;
     color: #1e50ae;
     margin-top: 30px;
+    cursor: pointer;
   }
 
   .fastPayLiftContent {
@@ -198,6 +199,7 @@ ul .navItem {
     height: 85px;
     background-color: #fff;
     position: relative;
+    overflow: hidden;
 
     .logoiMGBox {
       width: 85px;
