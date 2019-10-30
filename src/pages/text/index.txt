@@ -1,5 +1,7 @@
 <div class="hearder">
+
     <div class="container">
+    <img class='logoImg'  src="./assets/img/logo.png" alt="">
        <span class='hearderTitles'>世纪扬华教育</span>
         <div class="nav">
             <ul class="navRight">
