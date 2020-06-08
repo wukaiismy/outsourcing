@@ -76,7 +76,9 @@ var serviceNet = function(data) {
       `</span>
       </div>
       <div class="contactUsDetail1 De2">
-        工作时间：<span>10:00～18:00（工作日）</span>
+        工作时间：<span>` +
+      item.work_hours +
+      `</span>
       </div>
       <div class="contactUsDetail1 De3">
         客服邮箱：<span>` +

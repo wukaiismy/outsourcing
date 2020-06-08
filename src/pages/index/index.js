@@ -57,12 +57,7 @@ $(function() {
       $(".modal-body1").html("联系人和联系电话必填！");
     }
   });
-  $("#serach").click(function() {
-    location.href = "./serviceNet.html";
-  });
-  $("#applycooperation").click(function() {
-    location.href = "./applycooperation.html";
-  });
+
   var UrlBanner =
     "/yanghua_edu/api/banner_img/banner_img/?banner_position_name=top";
   // 获取初始化数据
@@ -113,6 +108,8 @@ $(function() {
   // 获取底部图片
   getImage("right-bottom", [".img1", ".img2"]);
 
+  // 获取小模块
+  getModuls();
   const dataListArr = [[], [], []];
   // 行业动态
   msgReq(1);
@@ -211,6 +208,55 @@ var msgReq = function(id, dataListArr) {
   });
 };
 
+// 获取小模块
+var getModuls = function(params) {
+  // 获取底部图片
+  var UrlImg = "/yanghua_edu/api/other_module/home_small/";
+  // 获取初始化数据
+  $.ajax({
+    url: UrlImg,
+    type: "GET",
+    dataType: "json", //指定服务器返回的数据类型
+    success: function(res) {
+      if (res.code == 1) {
+        console.log("小模块");
+        console.log(res.data);
+        var dataList = res.data;
+        $("#serach .tipImg").attr("src", dataList[0].image);
+        $("#serach div").html(dataList[0].title);
+        $("#serach").on("click", function() {
+          window.open(dataList[0].url_path, "_blank");
+        });
+        $("#applycooperation .tipImg").attr("src", dataList[1].image);
+        $("#applycooperation div").html(dataList[1].title);
+        $("#applycooperation").on("click", function() {
+          window.open(dataList[1].url_path, "_blank");
+        });
+
+        $("#product1 .tipImg").attr("src", dataList[2].image);
+        $("#product1 div").html(dataList[2].title);
+        $("#product1").on("click", function() {
+          window.open(dataList[2].url_path, "_blank");
+        });
+
+        $("#serach1 .tipImg").attr("src", dataList[3].image);
+        $("#serach1 div").html(dataList[3].title);
+        $("#serach1").on("click", function() {
+          window.open(dataList[3].url_path, "_blank");
+        });
+
+        $("#applycooperation1 .tipImg").attr("src", dataList[4].image);
+        $("#applycooperation1 div").html(dataList[4].title);
+        $("#applycooperation1").on("click", function() {
+          window.open(dataList[4].url_path, "_blank");
+        });
+      }
+    },
+    error: function(XMLHttpRequest, textStatus, errorThrown) {
+      console.log("请求数据异常，状态码：" + XMLHttpRequest.status);
+    }
+  });
+};
 // 获取图片
 var getImage = function(url, imgClass) {
   // 获取底部图片
